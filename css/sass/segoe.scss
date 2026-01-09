@@ -1,0 +1,101 @@
+// @font-face {
+//   font-family: 'SegoeUI';
+//   src: url('../fonts/Segoe/SegoeUI-Light.svg#SegoeUI-Light') format('svg'), 
+//     url('../fonts/Segoe/SegoeUI-Light.ttf')  format('truetype'), 
+//     url('../fonts/Segoe/SegoeUI-Light.woff') format('woff'),
+//     url('../fonts/Segoe/segoeuil.eot?#iefix') format('embedded-opentype');
+//   font-weight: 200;
+//   font-style: normal;
+// }
+
+// @font-face {
+//   font-family: 'SegoeUI';
+//   src: url('../fonts/Segoe/seguili.svg#SegoeUI-LightItalic') format('svg'), 
+//     url('../fonts/Segoe/seguili.ttf')  format('truetype'), 
+//     url('../fonts/Segoe/seguili.woff') format('woff'),
+//     url('../fonts/Segoe/seguili.eot?#iefix') format('embedded-opentype');
+//   font-weight: 200;
+//   font-style: italic;
+// }
+
+@font-face {
+  font-family: 'SegoeUI';
+  src: url('../fonts/Segoe/SegoeUI-Semilight.svg#SegoeUI-Semilight') format('svg'), 
+    url('../fonts/Segoe/SegoeUI-Semilight.ttf')  format('truetype'), 
+    url('../fonts/Segoe/SegoeUI-Semilight.woff') format('woff'),
+    url('../fonts/Segoe/segoeuisl.eot?#iefix') format('embedded-opentype');
+  font-weight: 300;
+  font-style: normal;
+}
+
+// @font-face {
+//   font-family: 'SegoeUI';
+//   src: url('../fonts/Segoe/seguisli.svg#SegoeUI-SemilightItalic') format('svg'), 
+//     url('../fonts/Segoe/seguisli.ttf')  format('truetype'), 
+//     url('../fonts/Segoe/seguisli.woff') format('woff'),
+//     url('../fonts/Segoe/seguisli.eot?#iefix') format('embedded-opentype');
+//   font-weight: 300;
+//   font-style: italic;
+// }
+
+@font-face {
+  font-family: 'SegoeUI';
+  src: url('../fonts/Segoe/SegoeUI-Italic.svg#SegoeUI-Italic') format('svg'),
+      url('../fonts/Segoe/SegoeUI-Italic.ttf') format('truetype'),
+      url('../fonts/Segoe/SegoeUI-Italic.woff') format('woff'),
+      url('../fonts/Segoe/SegoeUI-Italic.eot'),
+      url('../fonts/Segoe/SegoeUI-Italic.eot?#iefix') format('embedded-opentype'),
+      url('../fonts/Segoe/SegoeUI-Italic.woff2') format('woff2');
+  font-weight: 400;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'SegoeUI';
+  src: url('../fonts/Segoe/SegoeUI.svg#SegoeUI') format('svg'),
+      url('../fonts/Segoe/SegoeUI.ttf') format('truetype'),
+      url('../fonts/Segoe/SegoeUI.woff') format('woff'),
+      url('../fonts/Segoe/SegoeUI.eot'),
+      url('../fonts/Segoe/SegoeUI.eot?#iefix') format('embedded-opentype'),
+      url('../fonts/Segoe/SegoeUI.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'SegoeUI';
+  src: url('../fonts/Segoe/SegoeUI-Semibold.svg#SegoeUI-Semibold') format('svg'),
+    url('../fonts/Segoe/SegoeUI-Semibold.ttf') format('truetype'),    
+    url('../fonts/Segoe/SegoeUI-Semibold.woff') format('woff'),
+    url('../fonts/Segoe/SegoeUI-Semibold.eot'),
+    url('../fonts/Segoe/SegoeUI-Semibold.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/Segoe/SegoeUI-Semibold.woff2') format('woff2');
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'SegoeUI';
+  src: url('../fonts/Segoe/SegoeUI-Bold.svg#SegoeUI-Bold') format('svg'),
+      url('../fonts/Segoe/SegoeUI-Bold.ttf') format('truetype'),
+      url('../fonts/Segoe/SegoeUI-Bold.woff') format('woff'),
+      url('../fonts/Segoe/SegoeUI-Bold.eot'),
+      url('../fonts/Segoe/SegoeUI-Bold.eot?#iefix') format('embedded-opentype'),
+      url('../fonts/Segoe/SegoeUI-Bold.woff2') format('woff2');
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'SegoeUI';
+  src: url('../fonts/Segoe/SegoeUI-BoldItalic.eot?#iefix') format('embedded-opentype'),  url('../fonts/Segoe/SegoeUI-BoldItalic.woff') format('woff'), url('../fonts/Segoe/SegoeUI-BoldItalic.ttf')  format('truetype'), url('../fonts/Segoe/SegoeUI-BoldItalic.svg#SegoeUI-BoldItalic') format('svg');
+  font-weight: 700;
+  font-style: italic;
+}
+
+// @font-face {
+//   font-family: 'SegoeUI';
+//   src: url('../fonts/Segoe/SegoeUIBlack.eot?#iefix') format('embedded-opentype'),  url('../fonts/Segoe/SegoeUIBlack.woff') format('woff'), url('../fonts/Segoe/SegoeUIBlack.ttf')  format('truetype'), url('../fonts/Segoe/SegoeUIBlack.svg#SegoeUIBlack') format('svg');
+//   font-weight: 900;
+//   font-style: normal;
+// }

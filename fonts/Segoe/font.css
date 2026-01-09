@@ -1,0 +1,60 @@
+@font-face {
+  font-family: 'SegoeUI';
+  src: url('../fonts/Segoe/SegoeUI-Semibold.eot'),
+      url('../fonts/Segoe/SegoeUI-Semibold.eot?#iefix') format('embedded-opentype'),
+      url('../fonts/Segoe/SegoeUI-Semibold.woff2') format('woff2'),
+      url('../fonts/Segoe/SegoeUI-Semibold.svg#SegoeUI-Semibold') format('svg'),
+      url('../fonts/Segoe/SegoeUI-Semibold.ttf') format('truetype'),
+      url('../fonts/Segoe/SegoeUI-Semibold.woff') format('woff');
+  font-weight: 600;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'SegoeUI';
+  src: url('../fonts/Segoe/SegoeUI-Italic.svg#SegoeUI-Italic') format('svg'),
+      url('../fonts/Segoe/SegoeUI-Italic.ttf') format('truetype'),
+      url('../fonts/Segoe/SegoeUI-Italic.woff') format('woff'),
+      url('../fonts/Segoe/SegoeUI-Italic.eot'),
+      url('../fonts/Segoe/SegoeUI-Italic.eot?#iefix') format('embedded-opentype'),
+      url('../fonts/Segoe/SegoeUI-Italic.woff2') format('woff2');
+  font-weight: 400;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'SegoeUI';
+  src: url('../fonts/Segoe/SegoeUI.svg#SegoeUI') format('svg'),
+      url('../fonts/Segoe/SegoeUI.ttf') format('truetype'),
+      url('../fonts/Segoe/SegoeUI.woff') format('woff'),
+      url('../fonts/Segoe/SegoeUI.eot'),
+      url('../fonts/Segoe/SegoeUI.eot?#iefix') format('embedded-opentype'),
+      url('../fonts/Segoe/SegoeUI.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'SegoeUI';
+  src: url('SegoeUI-Bold.svg#SegoeUI-Bold') format('svg'),
+      url('SegoeUI-Bold.ttf') format('truetype'),
+      url('SegoeUI-Bold.woff') format('woff'),
+      url('SegoeUI-Bold.eot'),
+      url('SegoeUI-Bold.eot?#iefix') format('embedded-opentype'),
+      url('SegoeUI-Bold.woff2') format('woff2');
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'SegoeUI';
+  src: url('SegoeUI-Semilight.eot?#iefix') format('embedded-opentype'),  url('SegoeUI-Semilight.woff') format('woff'), url('SegoeUI-Semilight.ttf')  format('truetype'), url('SegoeUI-Semilight.svg#SegoeUI-Semilight') format('svg');
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'SegoeUI';
+  src: url('SegoeUIBlack.eot?#iefix') format('embedded-opentype'),  url('SegoeUIBlack.woff') format('woff'), url('SegoeUIBlack.ttf')  format('truetype'), url('SegoeUIBlack.svg#SegoeUIBlack') format('svg');
+  font-weight: 900;
+  font-style: normal;
+}

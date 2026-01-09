@@ -1,0 +1,1770 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Orlando's #1 asphalt paving & sealcoating contractor since 2002. 5,000+ projects, A+ BBB rating. Commercial & residential. Free estimates - call 1-8-333-PAVEIT.">
+
+  <title>Asphalt Paving &amp; Sealcoating Orlando FL | Florida Sealcoating</title>
+
+  <link rel="apple-touch-icon" sizes="144x144" href="img/favicon/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="img/favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="img/favicon/favicon-16x16.png">
+  <link rel="manifest" href="img/favicon/site.webmanifest">
+  <link rel="mask-icon" href="img/favicon/safari-pinned-tab.svg" color="#fee900">
+  <meta name="theme-color" content="#1d1d1e">
+
+  <!-- Fonts - Design C uses Poppins (modern, friendly, approachable) -->
+  <!-- Alternative fonts:
+       Option 1 (current): Poppins - Modern geometric sans-serif
+       Option 2: Nunito - Rounded, friendly
+       Option 3: Work Sans - Clean, professional
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+  <link href="fonts/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+
+  <!-- Modern Redesign CSS -->
+  <link rel="stylesheet" type="text/css" href="css/modern-redesign.css">
+
+  <!-- Design C Specific Styles -->
+  <style>
+    /* Design C: Poppins for headings - modern, friendly, and approachable */
+    h1, h2, h3, h4, h5, h6,
+    .hero-title,
+    .card-title,
+    .section-header h2,
+    .stat-number,
+    .hover-card h3,
+    .process-step h4,
+    .faq-item-c summary {
+      font-family: 'Poppins', sans-serif !important;
+    }
+
+    .hero-text-c h1 {
+      font-weight: 700;
+      line-height: 1.2;
+    }
+
+    .stat-box .stat-number {
+      font-weight: 700;
+    }
+
+    /* Design C: Stats Hero with Animated Counters (compact) */
+    .hero-stats-c {
+      position: relative;
+      padding-top: 90px;
+      padding-bottom: 60px;
+      padding-left: 0;
+      padding-right: 0;
+      background: var(--color-dark);
+      overflow: hidden;
+      margin: 0;
+      width: 100%;
+      max-width: 100%;
+    }
+
+    .hero-stats-c::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: url('img/bg/asphalt-services.jpg') center/cover no-repeat;
+      opacity: 0.2;
+      z-index: 0;
+    }
+
+    .hero-stats-c .hero-content {
+      position: relative;
+      z-index: 1;
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 2rem;
+    }
+
+    /* Animated Stats Counter */
+    .animated-stats {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 1rem;
+      margin-bottom: 2rem;
+    }
+
+    .stat-box {
+      background: rgba(255, 255, 255, 0.05);
+      backdrop-filter: blur(10px);
+      border: 1px solid rgba(254, 233, 0, 0.2);
+      border-radius: var(--border-radius-lg);
+      padding: 1.25rem 1rem;
+      text-align: center;
+      transition: all var(--transition-medium);
+      position: relative;
+      overflow: hidden;
+    }
+
+    .stat-box::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: -100%;
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(90deg, transparent, rgba(254, 233, 0, 0.1), transparent);
+      transition: left 0.5s ease;
+    }
+
+    .stat-box:hover::before {
+      left: 100%;
+    }
+
+    .stat-box:hover {
+      transform: translateY(-8px);
+      border-color: var(--color-primary);
+      box-shadow: 0 20px 40px rgba(254, 233, 0, 0.15);
+    }
+
+    .stat-box .stat-number {
+      font-size: clamp(2rem, 4vw, 2.5rem);
+      font-weight: 700;
+      color: var(--color-primary);
+      line-height: 1;
+      margin-bottom: 0.25rem;
+      font-family: var(--font-heading);
+    }
+
+    .stat-box .stat-suffix {
+      font-size: 1.5rem;
+      color: var(--color-primary);
+    }
+
+    .stat-box .stat-label {
+      color: rgba(255, 255, 255, 0.8);
+      font-size: 0.95rem;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+    }
+
+    .hero-text-c {
+      text-align: center;
+      max-width: 900px;
+      margin: 0 auto;
+    }
+
+    .hero-text-c h1 {
+      font-family: var(--font-heading);
+      font-size: clamp(2.5rem, 5vw, 4rem);
+      color: var(--color-white);
+      line-height: 1.2;
+      margin-bottom: 1.5rem;
+    }
+
+    .hero-text-c h1 span {
+      color: var(--color-primary);
+      position: relative;
+    }
+
+    .hero-text-c p {
+      font-size: 1.25rem;
+      color: rgba(255, 255, 255, 0.8);
+      margin-bottom: 2rem;
+      max-width: 700px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .hero-buttons {
+      display: flex;
+      gap: 1rem;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+
+    /* Quick Quote Section */
+    .quick-quote-section {
+      padding-top: 4rem;
+      padding-bottom: 4rem;
+      padding-left: 0;
+      padding-right: 0;
+      background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+      margin: 0;
+      width: 100%;
+    }
+
+    .quote-section-inner {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 4rem;
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 2rem;
+      align-items: center;
+    }
+
+    .quote-text h2 {
+      font-family: 'Poppins', sans-serif;
+      font-size: 2.5rem;
+      color: var(--color-dark);
+      margin-bottom: 1rem;
+      line-height: 1.2;
+    }
+
+    .quote-text h2 span {
+      color: var(--color-primary);
+      background: var(--color-dark);
+      padding: 0 0.5rem;
+    }
+
+    .quote-text > p {
+      color: var(--color-text-light);
+      font-size: 1.1rem;
+      line-height: 1.7;
+      margin-bottom: 1.5rem;
+    }
+
+    .quote-benefits {
+      list-style: none;
+      padding: 0;
+      margin: 0 0 1.5rem 0;
+    }
+
+    .quote-benefits li {
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+      color: var(--color-dark);
+      font-size: 1rem;
+      padding: 0.5rem 0;
+    }
+
+    .quote-benefits li i {
+      color: #28a745;
+      font-size: 1.1rem;
+    }
+
+    .quote-phone {
+      font-size: 1.1rem;
+      color: var(--color-text-light);
+    }
+
+    .quote-phone a {
+      color: var(--color-dark);
+      text-decoration: none;
+      transition: color var(--transition-fast);
+    }
+
+    .quote-phone a:hover {
+      color: var(--color-primary);
+    }
+
+    .quote-form-box {
+      background: var(--color-white);
+      border-radius: var(--border-radius-lg);
+      padding: 2rem;
+      box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
+      border: 1px solid rgba(0, 0, 0, 0.05);
+    }
+
+    .quote-form-box h3 {
+      font-family: 'Poppins', sans-serif;
+      font-size: 1.5rem;
+      color: var(--color-dark);
+      margin-bottom: 1.5rem;
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+    }
+
+    .quote-form-box h3 i {
+      color: var(--color-primary);
+    }
+
+    .quote-form-box .form-group {
+      margin-bottom: 1rem;
+    }
+
+    .quote-form-box input,
+    .quote-form-box select {
+      width: 100%;
+      padding: 0.875rem 1rem;
+      border: 2px solid var(--color-gray-light);
+      border-radius: var(--border-radius-md);
+      font-size: 1rem;
+      transition: border-color var(--transition-fast), box-shadow var(--transition-fast);
+      background: var(--color-white);
+    }
+
+    .quote-form-box input:focus,
+    .quote-form-box select:focus {
+      outline: none;
+      border-color: var(--color-primary);
+      box-shadow: 0 0 0 3px rgba(254, 233, 0, 0.2);
+    }
+
+    .quote-form-box input::placeholder {
+      color: var(--color-gray-medium);
+    }
+
+    .quote-form-box select {
+      cursor: pointer;
+      appearance: none;
+      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 12 12'%3E%3Cpath fill='%23666' d='M6 8L1 3h10z'/%3E%3C/svg%3E");
+      background-repeat: no-repeat;
+      background-position: right 1rem center;
+      padding-right: 2.5rem;
+    }
+
+    .form-row-c {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 1rem;
+    }
+
+    /* Responsive for Quick Quote */
+    @media screen and (max-width: 900px) {
+      .quote-section-inner {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+      }
+
+      .quote-text {
+        text-align: center;
+      }
+
+      .quote-text h2 {
+        font-size: 2rem;
+      }
+
+      .quote-benefits {
+        display: inline-block;
+        text-align: left;
+      }
+    }
+
+    @media screen and (max-width: 480px) {
+      .quick-quote-section {
+        padding-top: 2.5rem;
+        padding-bottom: 2.5rem;
+      }
+
+      .quote-section-inner {
+        padding: 0 1rem;
+      }
+
+      .quote-text h2 {
+        font-size: 1.75rem;
+      }
+
+      .quote-form-box {
+        padding: 1.5rem;
+      }
+
+      .form-row-c {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    /* Service Hover Cards */
+    .hover-cards-section {
+      padding-top: 3rem;
+      padding-bottom: 3rem;
+      padding-left: 0;
+      padding-right: 0;
+      background: var(--color-white);
+      margin: 0;
+      width: 100%;
+    }
+
+    .hover-cards-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 0;
+      max-width: 1400px;
+      margin: 0 auto;
+    }
+
+    .hover-card {
+      position: relative;
+      height: 320px;
+      overflow: hidden;
+      cursor: pointer;
+    }
+
+    .hover-card img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: transform 0.6s ease;
+    }
+
+    .hover-card:hover img {
+      transform: scale(1.1);
+    }
+
+    .hover-card .card-overlay {
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(to top, rgba(29, 29, 30, 0.95) 0%, rgba(29, 29, 30, 0.3) 50%, transparent 100%);
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+      padding: 2rem;
+      transition: background var(--transition-medium);
+    }
+
+    .hover-card:hover .card-overlay {
+      background: linear-gradient(to top, rgba(29, 29, 30, 0.98) 0%, rgba(29, 29, 30, 0.7) 100%);
+    }
+
+    .hover-card .card-content {
+      transform: translateY(20px);
+      transition: transform var(--transition-medium);
+    }
+
+    .hover-card:hover .card-content {
+      transform: translateY(0);
+    }
+
+    .hover-card h3 {
+      font-family: var(--font-heading);
+      font-size: 1.75rem;
+      color: var(--color-white);
+      margin-bottom: 0.5rem;
+    }
+
+    .hover-card .card-desc {
+      color: rgba(255, 255, 255, 0.8);
+      margin-bottom: 1rem;
+      opacity: 0;
+      max-height: 0;
+      overflow: hidden;
+      transition: all var(--transition-medium);
+    }
+
+    .hover-card:hover .card-desc {
+      opacity: 1;
+      max-height: 100px;
+    }
+
+    .hover-card .card-link {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      color: var(--color-primary);
+      font-weight: 600;
+      text-decoration: none;
+      opacity: 0;
+      transform: translateY(10px);
+      transition: all var(--transition-medium);
+    }
+
+    .hover-card:hover .card-link {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    .hover-card .card-link:hover {
+      gap: 1rem;
+    }
+
+    /* FAQ Accordion Section */
+    .faq-section-c {
+      padding-top: 3rem;
+      padding-bottom: 3rem;
+      padding-left: 0;
+      padding-right: 0;
+      background: var(--color-gray-light);
+      margin: 0;
+      width: 100%;
+    }
+
+    .faq-container {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 0 2rem;
+    }
+
+    .faq-item-c {
+      background: var(--color-white);
+      margin-bottom: 1rem;
+      border-radius: var(--border-radius-md);
+      box-shadow: var(--shadow-sm);
+      overflow: hidden;
+    }
+
+    .faq-item-c summary {
+      list-style: none;
+      padding: 1.5rem 3rem 1.5rem 1.5rem;
+      font-weight: 600;
+      font-size: 1.1rem;
+      color: var(--color-dark);
+      cursor: pointer;
+      position: relative;
+      transition: background var(--transition-fast);
+    }
+
+    .faq-item-c summary::-webkit-details-marker {
+      display: none;
+    }
+
+    .faq-item-c summary:hover {
+      background: rgba(254, 233, 0, 0.05);
+    }
+
+    .faq-item-c summary::after {
+      content: '';
+      position: absolute;
+      right: 1.5rem;
+      top: 50%;
+      width: 12px;
+      height: 12px;
+      border-right: 2px solid var(--color-primary);
+      border-bottom: 2px solid var(--color-primary);
+      transform: translateY(-70%) rotate(45deg);
+      transition: transform var(--transition-fast);
+    }
+
+    .faq-item-c[open] summary::after {
+      transform: translateY(-30%) rotate(-135deg);
+    }
+
+    .faq-item-c[open] summary {
+      background: var(--color-primary);
+      color: var(--color-dark);
+    }
+
+    .faq-item-c[open] summary::after {
+      border-color: var(--color-dark);
+    }
+
+    .faq-answer-c {
+      padding: 1.5rem;
+      color: var(--color-text-light);
+      line-height: 1.8;
+      border-top: 1px solid var(--color-gray-light);
+      animation: slideDown 0.3s ease;
+    }
+
+    @keyframes slideDown {
+      from {
+        opacity: 0;
+        transform: translateY(-10px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    /* Interactive Map Section */
+    .map-section {
+      padding-top: 3rem;
+      padding-bottom: 3rem;
+      padding-left: 0;
+      padding-right: 0;
+      background: var(--color-dark);
+      margin: 0;
+      width: 100%;
+    }
+
+    .map-container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 2rem;
+    }
+
+    .map-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 4rem;
+      align-items: center;
+    }
+
+    .map-locations {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 1rem;
+    }
+
+    .map-location-btn {
+      background: var(--color-dark-medium);
+      border: 2px solid var(--color-dark-light);
+      border-radius: var(--border-radius-md);
+      padding: 1.25rem 1.5rem;
+      color: var(--color-white);
+      text-align: left;
+      cursor: pointer;
+      transition: all var(--transition-fast);
+      text-decoration: none;
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+    }
+
+    .map-location-btn:hover,
+    .map-location-btn.active {
+      background: var(--color-primary);
+      border-color: var(--color-primary);
+      color: var(--color-dark);
+      transform: translateX(5px);
+    }
+
+    .map-location-btn i {
+      font-size: 1.5rem;
+    }
+
+    .map-location-btn span {
+      font-weight: 600;
+      font-size: 1.1rem;
+    }
+
+    .map-visual {
+      position: relative;
+    }
+
+    .map-visual img {
+      width: 100%;
+      max-width: 400px;
+      margin: 0 auto;
+      display: block;
+      filter: drop-shadow(0 0 30px rgba(254, 233, 0, 0.3));
+    }
+
+    .extended-areas {
+      text-align: center;
+      margin-top: 3rem;
+      padding-top: 2rem;
+      border-top: 1px solid var(--color-dark-light);
+    }
+
+    .extended-areas h4 {
+      color: var(--color-white);
+      margin-bottom: 1rem;
+      font-size: 1.1rem;
+    }
+
+    .extended-areas p {
+      color: var(--color-gray-medium);
+      line-height: 1.8;
+    }
+
+    /* Process Timeline */
+    .process-section {
+      padding-top: 3rem;
+      padding-bottom: 3rem;
+      padding-left: 0;
+      padding-right: 0;
+      background: var(--color-white);
+      margin: 0;
+      width: 100%;
+    }
+
+    .process-timeline {
+      display: flex;
+      justify-content: space-between;
+      max-width: 1000px;
+      margin: 0 auto;
+      padding: 0 2rem;
+      position: relative;
+    }
+
+    .process-timeline::before {
+      content: '';
+      position: absolute;
+      top: 40px;
+      left: 10%;
+      right: 10%;
+      height: 4px;
+      background: var(--color-gray-light);
+    }
+
+    .process-step {
+      text-align: center;
+      flex: 1;
+      position: relative;
+      z-index: 1;
+    }
+
+    .step-number {
+      width: 80px;
+      height: 80px;
+      background: var(--color-dark);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 0 auto 1.5rem;
+      font-size: 2rem;
+      font-weight: 700;
+      color: var(--color-primary);
+      border: 4px solid var(--color-white);
+      box-shadow: var(--shadow-md);
+      transition: all var(--transition-medium);
+    }
+
+    .process-step:hover .step-number {
+      background: var(--color-primary);
+      color: var(--color-dark);
+      transform: scale(1.1);
+    }
+
+    .process-step h4 {
+      font-family: var(--font-heading);
+      font-size: 1.25rem;
+      color: var(--color-dark);
+      margin-bottom: 0.5rem;
+    }
+
+    .process-step p {
+      color: var(--color-text-light);
+      font-size: 0.95rem;
+      max-width: 180px;
+      margin: 0 auto;
+    }
+
+    /* Gallery Grid (simplified from masonry to prevent overlap) */
+    .gallery-masonry {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 1rem;
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 2rem;
+    }
+
+    .gallery-masonry .gallery-item {
+      position: relative;
+      border-radius: var(--border-radius-md);
+      overflow: hidden;
+      aspect-ratio: 4/3;
+    }
+
+    .gallery-masonry .gallery-item img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: transform 0.5s ease;
+    }
+
+    .gallery-masonry .gallery-item:hover img {
+      transform: scale(1.1);
+    }
+
+    .gallery-masonry .gallery-overlay {
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(to top, rgba(0,0,0,0.7) 0%, transparent 50%);
+      display: flex;
+      align-items: flex-end;
+      padding: 1rem;
+      opacity: 0;
+      transition: opacity 0.3s ease;
+    }
+
+    .gallery-masonry .gallery-item:hover .gallery-overlay {
+      opacity: 1;
+    }
+
+    .gallery-masonry .gallery-caption {
+      color: #fff;
+      font-weight: 600;
+    }
+
+    /* Responsive */
+    @media screen and (max-width: 1024px) {
+      .animated-stats {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      .hover-cards-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      .map-grid {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+      }
+
+      .map-visual {
+        order: -1;
+      }
+
+      .map-visual img {
+        max-width: 300px;
+      }
+
+      .gallery-masonry {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+
+    @media screen and (max-width: 768px) {
+      .hero-stats-c {
+        padding: 70px 0 40px;
+      }
+
+      .animated-stats {
+        grid-template-columns: 1fr 1fr;
+        gap: 0.75rem;
+      }
+
+      .stat-box {
+        padding: 1rem 0.75rem;
+      }
+
+      .stat-box .stat-number {
+        font-size: 1.75rem;
+      }
+
+      .stat-box .stat-suffix {
+        font-size: 1.25rem;
+      }
+
+      .stat-box .stat-label {
+        font-size: 0.75rem;
+      }
+
+      .hero-text-c h1 {
+        font-size: 1.75rem;
+        margin-bottom: 1rem;
+      }
+
+      .hero-text-c p {
+        font-size: 1rem;
+        margin-bottom: 1.5rem;
+      }
+
+      .hero-buttons {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .hero-buttons .btn-modern {
+        width: 100%;
+        max-width: 280px;
+      }
+
+      .hover-cards-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .hover-card {
+        height: 280px;
+      }
+
+      .hover-card h3 {
+        font-size: 1.5rem;
+      }
+
+      /* On mobile, show description by default */
+      .hover-card .card-desc {
+        opacity: 1;
+        max-height: 100px;
+        font-size: 0.9rem;
+      }
+
+      .hover-card .card-link {
+        opacity: 1;
+        transform: translateY(0);
+      }
+
+      .process-timeline {
+        flex-direction: column;
+        gap: 2rem;
+        padding: 0 1rem;
+      }
+
+      .process-timeline::before {
+        display: none;
+      }
+
+      .step-number {
+        width: 60px;
+        height: 60px;
+        font-size: 1.5rem;
+      }
+
+      .process-step h4 {
+        font-size: 1.1rem;
+      }
+
+      .process-step p {
+        font-size: 0.9rem;
+      }
+
+      .map-locations {
+        grid-template-columns: 1fr;
+      }
+
+      .map-location-btn {
+        padding: 1rem 1.25rem;
+      }
+
+      .map-visual img {
+        max-width: 250px;
+      }
+
+      .faq-container {
+        padding: 0 1rem;
+      }
+
+      .faq-item-c summary {
+        font-size: 1rem;
+        padding: 1.25rem 2.5rem 1.25rem 1rem;
+      }
+
+      .gallery-masonry {
+        grid-template-columns: 1fr 1fr;
+        padding: 0 1rem;
+        gap: 0.75rem;
+      }
+    }
+
+    @media screen and (max-width: 480px) {
+      .hero-stats-c {
+        padding: 65px 0 30px;
+      }
+
+      .animated-stats {
+        gap: 0.5rem;
+      }
+
+      .stat-box {
+        padding: 0.75rem 0.5rem;
+      }
+
+      .stat-box .stat-number {
+        font-size: 1.5rem;
+      }
+
+      .stat-box .stat-suffix {
+        font-size: 1rem;
+      }
+
+      .stat-box .stat-label {
+        font-size: 0.65rem;
+        letter-spacing: 0.5px;
+      }
+
+      .hero-text-c h1 {
+        font-size: 1.5rem;
+      }
+
+      .hover-card {
+        height: 260px;
+      }
+
+      .hover-card h3 {
+        font-size: 1.25rem;
+      }
+
+      .gallery-masonry {
+        grid-template-columns: 1fr;
+        gap: 0.75rem;
+      }
+    }
+
+    /* Responsive styles for new sections */
+    @media screen and (max-width: 900px) {
+      .promise-section-c > div > div {
+        grid-template-columns: 1fr !important;
+        gap: 2rem !important;
+        text-align: center;
+      }
+
+      .promise-section-c .promise-image {
+        order: -1;
+      }
+    }
+
+    @media screen and (max-width: 600px) {
+      .testimonials-section-c > div > div:last-child {
+        grid-template-columns: 1fr !important;
+      }
+    }
+  </style>
+
+  <!-- Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-SY7PX8ER88"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-SY7PX8ER88');
+  </script>
+</head>
+
+<body id="top" class="redesign-page">
+
+  <!-- Modern Header -->
+  <header class="modern-header" id="mainHeader">
+    <div class="header-inner">
+      <a href="index.html" class="logo">
+        <img src="img/florida-sealcoating.png" alt="Florida Sealcoating LLC" width="210" height="52">
+      </a>
+
+      <nav class="modern-nav" id="mainNav">
+        <a href="index-design-c.html">Home</a>
+        <a href="about.html">About</a>
+
+        <details class="nav-dropdown">
+          <summary>Services</summary>
+          <div class="dropdown-content">
+            <a href="services.html">Service Overview</a>
+            <a href="residential.html">Residential</a>
+            <a href="commercial.html">Commercial</a>
+            <a href="asphalt-paving.html">Asphalt Paving</a>
+            <a href="asphaltrepair.html">Asphalt Repair</a>
+            <a href="sealcoating.html">Sealcoating</a>
+            <a href="asphaltstriping.html">Asphalt Striping</a>
+            <a href="crack-sealing.html">Crack Sealing</a>
+            <a href="additionalservices.html">Additional Services</a>
+          </div>
+        </details>
+
+        <details class="nav-dropdown">
+          <summary>Locations</summary>
+          <div class="dropdown-content">
+            <a href="locations/orlando.html">Orlando</a>
+            <a href="locations/sanford.html">Sanford</a>
+            <a href="locations/altamonte-springs.html">Altamonte Springs</a>
+            <a href="locations/oviedo.html">Oviedo</a>
+            <a href="locations/winter-springs.html">Winter Springs</a>
+          </div>
+        </details>
+
+        <a href="/blog">Blog</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+
+      <div class="header-cta">
+        <a href="tel:1-8-333-PAVEIT" class="header-phone">
+          <i class="fa fa-phone"></i> 1-8-333-PAVEIT
+        </a>
+      </div>
+
+      <button class="mobile-menu-toggle" id="mobileMenuToggle" aria-label="Toggle navigation menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- Design C: Stats Hero with Animated Counters -->
+  <section class="hero-stats-c">
+    <div class="hero-content">
+      <!-- Animated Stats -->
+      <div class="animated-stats">
+        <div class="stat-box">
+          <div class="stat-number">
+            <span class="counter" data-target="20">0</span><span class="stat-suffix">+</span>
+          </div>
+          <div class="stat-label">Years Experience</div>
+        </div>
+        <div class="stat-box">
+          <div class="stat-number">
+            <span class="counter" data-target="90">0</span><span class="stat-suffix">%</span>
+          </div>
+          <div class="stat-label">Repeat Customers</div>
+        </div>
+        <div class="stat-box">
+          <div class="stat-number">
+            <span class="counter" data-target="5000">0</span><span class="stat-suffix">+</span>
+          </div>
+          <div class="stat-label">Projects Completed</div>
+        </div>
+        <div class="stat-box">
+          <div class="stat-number">A<span class="stat-suffix">+</span></div>
+          <div class="stat-label">BBB Rating</div>
+        </div>
+      </div>
+
+      <!-- Hero Text -->
+      <div class="hero-text-c">
+        <h1>Orlando's Most <span>Trusted</span> Asphalt Experts</h1>
+        <p>Commercial parking lots, residential driveways, and everything in between. Get the quality your property deserves.</p>
+        <div class="hero-buttons">
+          <a href="contact.html" class="btn-modern btn-primary btn-lg">
+            Get Your Free Estimate
+          </a>
+          <a href="tel:1-8-333-PAVEIT" class="btn-modern btn-outline btn-lg">
+            <i class="fa fa-phone"></i> 1-8-333-PAVEIT
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Trust Bar -->
+  <div class="trust-bar">
+    <div class="trust-items">
+      <div class="trust-item">
+        <span class="trust-icon"><i class="fa fa-trophy"></i></span>
+        <span>20+ Years Experience</span>
+      </div>
+      <div class="trust-item">
+        <span class="trust-icon"><i class="fa fa-users"></i></span>
+        <span>90% Repeat Customers</span>
+      </div>
+      <div class="trust-item">
+        <span class="trust-icon"><i class="fa fa-shield"></i></span>
+        <span>Licensed &amp; Insured</span>
+      </div>
+      <div class="trust-item">
+        <span class="trust-icon"><i class="fa fa-star"></i></span>
+        <span>A+ BBB Rating</span>
+      </div>
+      <div class="trust-item reviews-badge" style="background: rgba(255,255,255,0.1); border-radius: 50px; padding: 0.5rem 1rem;">
+        <span class="stars" style="color: #fbbc04;"><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i></span>
+        <span style="color: #fff;">5.0</span>
+        <span style="color: var(--color-gray-medium); font-size: 0.85rem;">Google Reviews</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- Quick Quote Section -->
+  <section class="quick-quote-section">
+    <div class="quote-section-inner">
+      <div class="quote-text">
+        <h2>Ready for a <span>Free Estimate?</span></h2>
+        <p>Get a no-obligation quote for your asphalt project. We respond within 24 hours and offer same-week estimates for most projects.</p>
+        <ul class="quote-benefits">
+          <li><i class="fa fa-check-circle"></i> Free on-site assessment</li>
+          <li><i class="fa fa-check-circle"></i> Detailed written estimate</li>
+          <li><i class="fa fa-check-circle"></i> No obligation to proceed</li>
+          <li><i class="fa fa-check-circle"></i> Flexible scheduling</li>
+        </ul>
+        <p class="quote-phone">Or call us directly: <a href="tel:1-8-333-PAVEIT"><strong>1-8-333-PAVEIT</strong></a></p>
+      </div>
+      <div class="quote-form-box">
+        <h3><i class="fa fa-envelope"></i> Get Your Free Quote</h3>
+        <form action="#" onsubmit="alert('Form submission disabled in preview'); return false;" method="post" id="quickQuoteForm">
+          <div class="form-row-c">
+            <div class="form-group">
+              <input type="text" name="name" placeholder="Your Name *" required>
+            </div>
+            <div class="form-group">
+              <input type="tel" name="phone" placeholder="Phone Number *" required>
+            </div>
+          </div>
+          <div class="form-group">
+            <input type="email" name="email" placeholder="Email Address *" required>
+          </div>
+          <div class="form-group">
+            <select name="service" required>
+              <option value="" disabled selected>Select Service Needed</option>
+              <option value="Sealcoating">Sealcoating</option>
+              <option value="Asphalt Paving">Asphalt Paving</option>
+              <option value="Striping">Striping &amp; Marking</option>
+              <option value="Crack Sealing">Crack Sealing</option>
+              <option value="Asphalt Repair">Asphalt Repair</option>
+              <option value="Other">Other Services</option>
+            </select>
+          </div>
+          <button type="submit" class="btn-modern btn-primary" style="width: 100%;">
+            Request Free Estimate <i class="fa fa-arrow-right"></i>
+          </button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- Service Hover Cards -->
+  <section class="hover-cards-section">
+    <div class="section-header" style="text-align: center; max-width: 700px; margin: 0 auto 1.5rem; padding: 0 2rem;">
+      <h2 style="font-family: var(--font-heading); font-size: 2.5rem; margin-bottom: 1rem;">Our <span style="background: var(--color-dark); color: var(--color-primary); padding: 0 0.5rem;">Services</span></h2>
+      <p style="color: var(--color-text-light);">Hover over each service to learn more</p>
+    </div>
+
+    <div class="hover-cards-grid">
+      <article class="hover-card">
+        <img src="img/misc/asphalt-paving/asphalt-paving-1.webp" alt="Asphalt Paving">
+        <div class="card-overlay">
+          <div class="card-content">
+            <h3>Asphalt Paving</h3>
+            <p class="card-desc">New installations, resurfacing, and complete parking lot paving with premium materials and expert craftsmanship.</p>
+            <a href="asphalt-paving.html" class="card-link">Learn More <i class="fa fa-arrow-right"></i></a>
+          </div>
+        </div>
+      </article>
+
+      <article class="hover-card">
+        <img src="img/misc/service_overview/sealcoating.jpg" alt="Sealcoating">
+        <div class="card-overlay">
+          <div class="card-content">
+            <h3>Sealcoating</h3>
+            <p class="card-desc">Protective barrier application that extends asphalt life, prevents damage, and enhances curb appeal.</p>
+            <a href="sealcoating.html" class="card-link">Learn More <i class="fa fa-arrow-right"></i></a>
+          </div>
+        </div>
+      </article>
+
+      <article class="hover-card">
+        <img src="img/misc/service_overview/stripping.jpg" alt="Striping">
+        <div class="card-overlay">
+          <div class="card-content">
+            <h3>Striping &amp; Marking</h3>
+            <p class="card-desc">ADA-compliant parking lot striping, traffic markings, and custom layouts for maximum efficiency.</p>
+            <a href="asphaltstriping.html" class="card-link">Learn More <i class="fa fa-arrow-right"></i></a>
+          </div>
+        </div>
+      </article>
+
+      <article class="hover-card">
+        <img src="img/misc/service_overview/crack-filling.jpg" alt="Crack Sealing">
+        <div class="card-overlay">
+          <div class="card-content">
+            <h3>Crack Sealing</h3>
+            <p class="card-desc">Prevent water damage and extend pavement life with professional crack repair and sealing.</p>
+            <a href="crack-sealing.html" class="card-link">Learn More <i class="fa fa-arrow-right"></i></a>
+          </div>
+        </div>
+      </article>
+
+      <article class="hover-card">
+        <img src="img/misc/commercial-asphalt-service.webp" alt="Commercial Services">
+        <div class="card-overlay">
+          <div class="card-content">
+            <h3>Commercial</h3>
+            <p class="card-desc">Shopping centers, office buildings, industrial properties, and HOA communities.</p>
+            <a href="commercial.html" class="card-link">Learn More <i class="fa fa-arrow-right"></i></a>
+          </div>
+        </div>
+      </article>
+
+      <article class="hover-card">
+        <img src="img/misc/residential-asphalt-service.webp" alt="Residential Services">
+        <div class="card-overlay">
+          <div class="card-content">
+            <h3>Residential</h3>
+            <p class="card-desc">Driveways, private roads, and home communities with attention to detail.</p>
+            <a href="residential.html" class="card-link">Learn More <i class="fa fa-arrow-right"></i></a>
+          </div>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <!-- Our Process -->
+  <section class="process-section">
+    <div class="section-header" style="text-align: center; margin-bottom: 4rem;">
+      <h2 style="font-family: var(--font-heading); font-size: 2.5rem; margin-bottom: 1rem;">How We <span style="background: var(--color-dark); color: var(--color-primary); padding: 0 0.5rem;">Work</span></h2>
+      <p style="color: var(--color-text-light);">Simple, transparent process from start to finish</p>
+    </div>
+
+    <div class="process-timeline">
+      <div class="process-step">
+        <div class="step-number">1</div>
+        <h4>Free Estimate</h4>
+        <p>Contact us for a no-obligation assessment of your project</p>
+      </div>
+      <div class="process-step">
+        <div class="step-number">2</div>
+        <h4>Custom Plan</h4>
+        <p>We create a tailored solution that fits your needs and budget</p>
+      </div>
+      <div class="process-step">
+        <div class="step-number">3</div>
+        <h4>Expert Work</h4>
+        <p>Our licensed crew completes the job with precision and care</p>
+      </div>
+      <div class="process-step">
+        <div class="step-number">4</div>
+        <h4>Quality Check</h4>
+        <p>Final inspection ensures everything meets our high standards</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Interactive Location Map -->
+  <section class="map-section">
+    <div class="map-container">
+      <div class="section-header" style="text-align: center; margin-bottom: 3rem;">
+        <h2 style="font-family: var(--font-heading); font-size: 2.5rem; color: var(--color-white); margin-bottom: 1rem;">
+          Serving <span style="color: var(--color-primary);">Central Florida</span>
+        </h2>
+        <p style="color: var(--color-gray-medium);">Click a location for local service information</p>
+      </div>
+
+      <div class="map-grid">
+        <div class="map-locations">
+          <a href="locations/orlando.html" class="map-location-btn active">
+            <i class="fa fa-map-marker"></i>
+            <span>Orlando</span>
+          </a>
+          <a href="locations/sanford.html" class="map-location-btn">
+            <i class="fa fa-map-marker"></i>
+            <span>Sanford</span>
+          </a>
+          <a href="locations/altamonte-springs.html" class="map-location-btn">
+            <i class="fa fa-map-marker"></i>
+            <span>Altamonte Springs</span>
+          </a>
+          <a href="locations/oviedo.html" class="map-location-btn">
+            <i class="fa fa-map-marker"></i>
+            <span>Oviedo</span>
+          </a>
+          <a href="locations/winter-springs.html" class="map-location-btn">
+            <i class="fa fa-map-marker"></i>
+            <span>Winter Springs</span>
+          </a>
+        </div>
+
+        <div class="map-visual">
+          <img src="img/misc/florida-map.png" alt="Florida Service Area Map">
+        </div>
+      </div>
+
+      <div class="extended-areas">
+        <h4>We Also Service These Areas:</h4>
+        <p>Kissimmee &bull; Davenport &bull; Lakeland &bull; Winter Garden &bull; Clermont &bull; Haines City &bull; Tampa &bull; Daytona &bull; St Augustine &bull; Melbourne &bull; Ft Lauderdale &bull; Miami and surrounding areas</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ Section -->
+  <section class="faq-section-c">
+    <div class="faq-container">
+      <div class="section-header" style="text-align: center; margin-bottom: 3rem;">
+        <h2 style="font-family: var(--font-heading); font-size: 2.5rem; margin-bottom: 1rem;">Frequently Asked <span style="background: var(--color-dark); color: var(--color-primary); padding: 0 0.5rem;">Questions</span></h2>
+        <p style="color: var(--color-text-light);">Click a question to see the answer</p>
+      </div>
+
+      <details class="faq-item-c">
+        <summary>How much does asphalt paving cost in Orlando?</summary>
+        <div class="faq-answer-c">
+          Asphalt paving typically costs $3-5 per square foot depending on the project size and base preparation needed. Contact us for a free, no-obligation estimate tailored to your specific project requirements.
+        </div>
+      </details>
+
+      <details class="faq-item-c">
+        <summary>How long does asphalt paving take to complete?</summary>
+        <div class="faq-answer-c">
+          Most residential driveways take 1-2 days to complete. Commercial parking lots vary based on size and complexity. We provide detailed timeline estimates upfront so you can plan accordingly.
+        </div>
+      </details>
+
+      <details class="faq-item-c">
+        <summary>When can I drive on new asphalt?</summary>
+        <div class="faq-answer-c">
+          You can typically drive on new asphalt after 24-48 hours. Full curing takes about 30 days, so we recommend avoiding sharp turns, parking in the same spot, or placing heavy objects on the surface during that time.
+        </div>
+      </details>
+
+      <details class="faq-item-c">
+        <summary>How often should I sealcoat my driveway or parking lot?</summary>
+        <div class="faq-answer-c">
+          We recommend sealcoating every 2-4 years, depending on traffic volume and weather exposure. Regular sealcoating can double the lifespan of your asphalt and save significantly on future repair costs.
+        </div>
+      </details>
+
+      <details class="faq-item-c">
+        <summary>Do you offer free estimates?</summary>
+        <div class="faq-answer-c">
+          Yes! We provide free, no-obligation estimates for all our services. Our team will assess your property, discuss your needs, and provide a detailed quote with transparent pricing. Call us at (407) 942-3681 to schedule.
+        </div>
+      </details>
+
+      <details class="faq-item-c">
+        <summary>Are you licensed and insured?</summary>
+        <div class="faq-answer-c">
+          Absolutely. Florida Sealcoating is fully licensed and insured, with over 20 years of experience serving Central Florida. We maintain all required certifications and carry comprehensive liability insurance for your protection.
+        </div>
+      </details>
+    </div>
+  </section>
+
+  <!-- Gallery Section -->
+  <section class="gallery-section" style="background: var(--color-white); padding-top: 3rem; padding-bottom: 3rem;">
+    <div class="section-header" style="text-align: center; margin-bottom: 2rem;">
+      <h2 style="font-family: var(--font-heading); font-size: 2.5rem;">Our <span style="background: var(--color-dark); color: var(--color-primary); padding: 0 0.5rem;">Work</span></h2>
+    </div>
+
+    <div class="gallery-masonry">
+      <a href="img/gallery/asphalt-service.jpg" class="gallery-item fancybox" rel="gallery">
+        <img src="img/gallery/thumbs/asphalt-service.jpg" alt="Asphalt paving project" loading="lazy">
+        <div class="gallery-overlay">
+          <span class="gallery-caption">Commercial Paving</span>
+        </div>
+      </a>
+      <a href="img/gallery/asphalt-service-1.jpg" class="gallery-item fancybox" rel="gallery">
+        <img src="img/gallery/thumbs/asphalt-service-1.jpg" alt="Driveway project" loading="lazy">
+        <div class="gallery-overlay">
+          <span class="gallery-caption">Driveway Work</span>
+        </div>
+      </a>
+      <a href="img/gallery/asphalt-service-2.jpg" class="gallery-item fancybox" rel="gallery">
+        <img src="img/gallery/thumbs/asphalt-service-2.jpg" alt="Equipment in action" loading="lazy">
+        <div class="gallery-overlay">
+          <span class="gallery-caption">Professional Equipment</span>
+        </div>
+      </a>
+      <a href="img/gallery/asphalt-service-3.jpg" class="gallery-item fancybox" rel="gallery">
+        <img src="img/gallery/thumbs/asphalt-service-3.jpg" alt="Sealcoating project" loading="lazy">
+        <div class="gallery-overlay">
+          <span class="gallery-caption">Sealcoating</span>
+        </div>
+      </a>
+      <a href="img/gallery/asphalt-service-4.jpg" class="gallery-item fancybox" rel="gallery">
+        <img src="img/gallery/thumbs/asphalt-service-4.jpg" alt="Parking lot work" loading="lazy">
+        <div class="gallery-overlay">
+          <span class="gallery-caption">Parking Lot</span>
+        </div>
+      </a>
+      <a href="img/gallery/asphalt-service-5.jpg" class="gallery-item fancybox" rel="gallery">
+        <img src="img/gallery/thumbs/asphalt-service-5.jpg" alt="Commercial project" loading="lazy">
+        <div class="gallery-overlay">
+          <span class="gallery-caption">Commercial Project</span>
+        </div>
+      </a>
+    </div>
+  </section>
+
+  <!-- Testimonials Section -->
+  <section class="testimonials-section-c" style="padding: 4rem 0; background: var(--color-gray-light);">
+    <div style="max-width: 1200px; margin: 0 auto; padding: 0 2rem;">
+      <div class="section-header" style="text-align: center; margin-bottom: 3rem;">
+        <h2 style="font-family: 'Poppins', sans-serif; font-size: 2.5rem; margin-bottom: 0.5rem;">What Our <span style="background: var(--color-dark); color: var(--color-primary); padding: 0 0.5rem;">Clients</span> Say</h2>
+        <p style="color: var(--color-text-light);">Real reviews from property owners across Central Florida</p>
+      </div>
+
+      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2rem;">
+        <article style="background: var(--color-white); padding: 2rem; border-radius: 16px; box-shadow: 0 4px 20px rgba(0,0,0,0.08); transition: transform 0.3s ease;">
+          <div style="color: var(--color-primary); font-size: 1.2rem; margin-bottom: 1rem;">
+            <i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i>
+          </div>
+          <blockquote style="color: var(--color-text); font-style: italic; line-height: 1.7; margin: 0 0 1.5rem 0; font-family: 'Poppins', sans-serif;">
+            "Florida Sealcoating did an amazing job on our parking lot. The crew was professional, on time, and the results exceeded our expectations. We've already scheduled them for our other properties."
+          </blockquote>
+          <div style="display: flex; align-items: center; gap: 1rem;">
+            <div style="width: 50px; height: 50px; background: var(--color-dark); border-radius: 50%; display: flex; align-items: center; justify-content: center; color: var(--color-primary); font-weight: bold; font-family: 'Poppins', sans-serif;">JM</div>
+            <div>
+              <strong style="display: block; color: var(--color-dark); font-family: 'Poppins', sans-serif;">Property Manager</strong>
+              <span style="font-size: 0.9rem; color: var(--color-gray-medium);">Orlando, FL</span>
+            </div>
+          </div>
+        </article>
+
+        <article style="background: var(--color-white); padding: 2rem; border-radius: 16px; box-shadow: 0 4px 20px rgba(0,0,0,0.08); transition: transform 0.3s ease;">
+          <div style="color: var(--color-primary); font-size: 1.2rem; margin-bottom: 1rem;">
+            <i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i>
+          </div>
+          <blockquote style="color: var(--color-text); font-style: italic; line-height: 1.7; margin: 0 0 1.5rem 0; font-family: 'Poppins', sans-serif;">
+            "We've used Florida Sealcoating for years. Their attention to detail and customer service is unmatched. They always communicate clearly and deliver exactly what they promise."
+          </blockquote>
+          <div style="display: flex; align-items: center; gap: 1rem;">
+            <div style="width: 50px; height: 50px; background: var(--color-dark); border-radius: 50%; display: flex; align-items: center; justify-content: center; color: var(--color-primary); font-weight: bold; font-family: 'Poppins', sans-serif;">SC</div>
+            <div>
+              <strong style="display: block; color: var(--color-dark); font-family: 'Poppins', sans-serif;">Shopping Center Owner</strong>
+              <span style="font-size: 0.9rem; color: var(--color-gray-medium);">Sanford, FL</span>
+            </div>
+          </div>
+        </article>
+
+        <article style="background: var(--color-white); padding: 2rem; border-radius: 16px; box-shadow: 0 4px 20px rgba(0,0,0,0.08); transition: transform 0.3s ease;">
+          <div style="color: var(--color-primary); font-size: 1.2rem; margin-bottom: 1rem;">
+            <i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i>
+          </div>
+          <blockquote style="color: var(--color-text); font-style: italic; line-height: 1.7; margin: 0 0 1.5rem 0; font-family: 'Poppins', sans-serif;">
+            "Our HOA has been working with Florida Sealcoating for over 10 years. They maintain all our community roads and driveways. Reliable, affordable, and always great quality work."
+          </blockquote>
+          <div style="display: flex; align-items: center; gap: 1rem;">
+            <div style="width: 50px; height: 50px; background: var(--color-dark); border-radius: 50%; display: flex; align-items: center; justify-content: center; color: var(--color-primary); font-weight: bold; font-family: 'Poppins', sans-serif;">TB</div>
+            <div>
+              <strong style="display: block; color: var(--color-dark); font-family: 'Poppins', sans-serif;">HOA Board Member</strong>
+              <span style="font-size: 0.9rem; color: var(--color-gray-medium);">Winter Springs, FL</span>
+            </div>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Our Promise Section -->
+  <section class="promise-section-c" style="padding: 4rem 0; background: var(--color-white);">
+    <div style="max-width: 1200px; margin: 0 auto; padding: 0 2rem;">
+      <div style="display: grid; grid-template-columns: 1fr 1.5fr; gap: 4rem; align-items: center;">
+        <div class="promise-image" style="position: relative;">
+          <img src="img/misc/bbb-seal.png" alt="BBB Accredited Business" style="width: 100%; max-width: 280px; margin: 0 auto; display: block;">
+        </div>
+        <div class="promise-content">
+          <h2 style="font-family: 'Poppins', sans-serif; font-size: 2.5rem; color: var(--color-dark); margin-bottom: 1.5rem;">Our Customer <span style="background: var(--color-dark); color: var(--color-primary); padding: 0 0.5rem;">Promise</span></h2>
+          <p style="color: var(--color-text-light); font-size: 1.1rem; line-height: 1.8; margin-bottom: 1.5rem;">It is our duty to our customers to provide honest, cost-effective solutions for your parking lot or driveway needs in the Orlando area and throughout Florida. Florida Sealcoating is dependable and values every customer.</p>
+          <p style="color: var(--color-text-light); font-size: 1.1rem; line-height: 1.8; margin-bottom: 1.5rem;">We strive to keep an open and lasting relationship with every customer, even once the project is completed. Backed by 20 years of experience, we understand the significance of every project we're assigned to no matter the size or complexity.</p>
+          <a href="about.html" class="btn-modern btn-primary">Learn About Us</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Client Logos -->
+  <section class="clients-section">
+    <div class="section-header">
+      <h3>Trusted by Leading Brands</h3>
+    </div>
+    <div class="clients-grid">
+      <img src="img/misc/clients/bjs.png" alt="BJs Wholesale Club" loading="lazy">
+      <img src="img/misc/clients/target.png" alt="Target" loading="lazy">
+      <img src="img/misc/clients/staples.png" alt="Staples" loading="lazy">
+      <img src="img/misc/clients/tdbank.png" alt="TD Bank" loading="lazy">
+      <img src="img/misc/clients/homedepot.png" alt="Home Depot" loading="lazy">
+      <img src="img/misc/clients/publix.png" alt="Publix" loading="lazy">
+    </div>
+  </section>
+
+  <!-- CTA Banner -->
+  <section class="cta-banner">
+    <div class="cta-content">
+      <h3>Ready to Get Started?</h3>
+      <div class="cta-actions">
+        <a href="tel:1-8-333-PAVEIT" class="phone-link">
+          <i class="fa fa-phone"></i> 1-8-333-PAVEIT
+        </a>
+        <a href="contact.html" class="btn-modern btn-dark">Request Free Estimate</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Modern Footer -->
+  <footer class="modern-footer">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <img src="img/florida-sealcoating-1.png" alt="Florida Sealcoating LLC" class="footer-logo">
+        <p>Orlando's trusted sealcoating &amp; asphalt paving contractor since 2002. Commercial &amp; residential services with 90% repeat customers.</p>
+        <div class="footer-social">
+          <a href="https://www.facebook.com/floridasealcoating/" target="_blank" aria-label="Facebook">
+            <i class="fa fa-facebook"></i>
+          </a>
+          <a href="https://www.instagram.com/floridasealcoating/" target="_blank" aria-label="Instagram">
+            <i class="fa fa-instagram"></i>
+          </a>
+          <a href="https://goo.gl/maps/qbCeNbGwopYVDgUb9" target="_blank" aria-label="Google Maps">
+            <i class="fa fa-google"></i>
+          </a>
+        </div>
+      </div>
+
+      <div class="footer-column">
+        <h4>Services</h4>
+        <ul>
+          <li><a href="asphalt-paving.html">Asphalt Paving</a></li>
+          <li><a href="sealcoating.html">Sealcoating</a></li>
+          <li><a href="asphaltstriping.html">Striping</a></li>
+          <li><a href="crack-sealing.html">Crack Sealing</a></li>
+          <li><a href="asphaltrepair.html">Repairs</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-column">
+        <h4>Locations</h4>
+        <ul>
+          <li><a href="locations/orlando.html">Orlando</a></li>
+          <li><a href="locations/sanford.html">Sanford</a></li>
+          <li><a href="locations/altamonte-springs.html">Altamonte Springs</a></li>
+          <li><a href="locations/oviedo.html">Oviedo</a></li>
+          <li><a href="locations/winter-springs.html">Winter Springs</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-column">
+        <h4>Contact</h4>
+        <ul>
+          <li><a href="tel:4079423681">(407) 942-3681</a></li>
+          <li><a href="tel:18333728348">1-8-333-PAVEIT</a></li>
+          <li><a href="contact.html">Contact Form</a></li>
+        </ul>
+        <div style="margin-top: 1.5rem;">
+          <a href="https://www.bbb.org/us/fl/sanford/profile/asphalt/florida-sealcoating-0733-90179766" target="_blank">
+            <img src="https://seal-centralflorida.bbb.org/logo/ruvtbum/florida-sealcoating-90179766.png" alt="BBB Accredited" style="height: 60px;">
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <div class="container">
+        <span>&copy; 2024 Florida Sealcoating LLC. All Rights Reserved.</span>
+        <span>Web Design, SEO &amp; Hosting by <a href="https://www.rekmarketing.com/" target="_blank">REK Marketing &amp; Design</a></span>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Sticky Mobile CTA Bar -->
+  <div class="sticky-cta-bar">
+    <div class="cta-inner">
+      <a href="tel:1-8-333-PAVEIT" class="cta-call">
+        <i class="fa fa-phone"></i> Call Now
+      </a>
+      <a href="contact.html" class="cta-quote">Free Quote</a>
+    </div>
+  </div>
+
+  <!-- Scripts -->
+  <script src="js/jquery.js"></script>
+  <link rel="stylesheet" type="text/css" href="fancybox/jquery.fancybox.css">
+  <script src="fancybox/jquery.fancybox.js"></script>
+
+  <script>
+    // Animated counter
+    function animateCounters() {
+      const counters = document.querySelectorAll('.counter');
+      const speed = 200;
+
+      counters.forEach(counter => {
+        const target = +counter.getAttribute('data-target');
+        const increment = target / speed;
+
+        const updateCount = () => {
+          const count = +counter.innerText;
+          if (count < target) {
+            counter.innerText = Math.ceil(count + increment);
+            setTimeout(updateCount, 10);
+          } else {
+            counter.innerText = target;
+          }
+        };
+
+        updateCount();
+      });
+    }
+
+    // Trigger counter animation when stats section is visible
+    const statsObserver = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          animateCounters();
+          statsObserver.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.5 });
+
+    const statsSection = document.querySelector('.animated-stats');
+    if (statsSection) {
+      statsObserver.observe(statsSection);
+    }
+
+    // Header scroll effect
+    window.addEventListener('scroll', function() {
+      const header = document.getElementById('mainHeader');
+      if (window.scrollY > 100) {
+        header.classList.add('scrolled');
+      } else {
+        header.classList.remove('scrolled');
+      }
+    });
+
+    // Close dropdowns when clicking outside
+    document.addEventListener('click', function(e) {
+      if (!e.target.closest('.nav-dropdown')) {
+        document.querySelectorAll('.nav-dropdown[open]').forEach(dropdown => {
+          dropdown.removeAttribute('open');
+        });
+      }
+    });
+
+    // Mobile menu toggle
+    const mobileMenuToggle = document.getElementById('mobileMenuToggle');
+    const mainNav = document.getElementById('mainNav');
+
+    if (mobileMenuToggle && mainNav) {
+      mobileMenuToggle.addEventListener('click', function() {
+        this.classList.toggle('active');
+        mainNav.classList.toggle('active');
+      });
+    }
+
+    // Initialize Fancybox
+    $(document).ready(function() {
+      $('.fancybox').fancybox({
+        helpers: {
+          overlay: { locked: false }
+        }
+      });
+    });
+  </script>
+
+  <!-- Structured Data with FAQ -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "HomeAndConstructionBusiness",
+        "@id": "https://www.floridasealcoating.com/#organization",
+        "name": "Florida Sealcoating LLC",
+        "description": "Orlando's trusted sealcoating & asphalt paving contractor since 2002.",
+        "url": "https://www.floridasealcoating.com/",
+        "telephone": "+1-407-942-3681"
+      },
+      {
+        "@type": "FAQPage",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "How much does asphalt paving cost in Orlando?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Asphalt paving typically costs $3-5 per square foot depending on the project size and base preparation needed."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "How long does asphalt paving take?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Most residential driveways take 1-2 days. Commercial parking lots vary based on size."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "When can I drive on new asphalt?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "You can typically drive on new asphalt after 24-48 hours. Full curing takes about 30 days."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "How often should I sealcoat my driveway?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "We recommend sealcoating every 2-4 years, depending on traffic volume and weather exposure."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Do you offer free estimates?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Yes! We provide free, no-obligation estimates for all our services."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Are you licensed and insured?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Absolutely. Florida Sealcoating is fully licensed and insured with over 20 years of experience."
+            }
+          }
+        ]
+      }
+    ]
+  }
+  </script>
+
+  <script>
+    nl_lang = "en";
+    nl_pos = "bl";
+    nl_compact = "1";
+    nl_dir = "/vendor/nagishli/nl-files/";
+  </script>
+  <script src="/vendor/nagishli/nagishli.js?v=2.3" charset="utf-8" defer></script>
+</body>
+
+</html>

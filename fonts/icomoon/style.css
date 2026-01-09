@@ -1,0 +1,110 @@
+@font-face {
+  font-family: 'icomoon';
+  src:  url('fonts/icomoon.eot?1fzvvy');
+  src:  url('fonts/icomoon.eot?1fzvvy#iefix') format('embedded-opentype'),
+    url('fonts/icomoon.ttf?1fzvvy') format('truetype'),
+    url('fonts/icomoon.woff?1fzvvy') format('woff'),
+    url('fonts/icomoon.svg?1fzvvy#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-plus:before {
+  content: "\e90b";
+}
+.icon-chevron-thin-right:before {
+  content: "\e908";
+}
+.icon-chevron-thin-left:before {
+  content: "\e909";
+}
+.icon-close:before {
+  content: "\e90a";
+}
+.icon-arrow-right:before {
+  content: "\e906";
+}
+.icon-arrow-left:before {
+  content: "\e907";
+}
+.icon-chevron-circle-right:before {
+  content: "\e90c";
+}
+.icon-fax:before {
+  content: "\e905";
+}
+.icon-angle-down:before {
+  content: "\e903";
+}
+.icon-angle-up:before {
+  content: "\e900";
+}
+.icon-phone:before {
+  content: "\e901";
+}
+.icon-yahoo:before {
+  content: "\e904";
+  color: #6001d2;
+}
+.icon-bing:before {
+  content: "\e902";
+  color: #008373;
+}
+.icon-location:before {
+  content: "\e947";
+}
+.icon-user:before {
+  content: "\e971";
+}
+.icon-cog:before {
+  content: "\e994";
+}
+.icon-star-full:before {
+  content: "\e9d9";
+}
+.icon-info:before {
+  content: "\ea0c";
+}
+.icon-checkmark:before {
+  content: "\ea10";
+}
+.icon-google:before {
+  content: "\ea88";
+}
+.icon-facebook:before {
+  content: "\ea90";
+}
+.icon-instagram:before {
+  content: "\ea92";
+}
+.icon-whatsapp:before {
+  content: "\ea93";
+}
+.icon-twitter:before {
+  content: "\ea96";
+}
+.icon-youtube:before {
+  content: "\ea9d";
+}
+.icon-linkedin2:before {
+  content: "\eaca";
+}
+.icon-yelp:before {
+  content: "\ead7";
+}

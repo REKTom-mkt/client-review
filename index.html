@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Florida Sealcoating - Website Design Review</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+      background: #0f0f0f;
+      color: #fff;
+      min-height: 100vh;
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 3rem 2rem;
+    }
+
+    header {
+      text-align: center;
+      margin-bottom: 4rem;
+    }
+
+    .logo {
+      margin-bottom: 1.5rem;
+    }
+
+    .logo img {
+      height: 60px;
+      width: auto;
+    }
+
+    h1 {
+      font-size: 2.5rem;
+      font-weight: 700;
+      margin-bottom: 0.75rem;
+      color: #fee900;
+    }
+
+    .subtitle {
+      font-size: 1.1rem;
+      color: #888;
+      max-width: 600px;
+      margin: 0 auto;
+      line-height: 1.6;
+    }
+
+    .designs-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+      gap: 2rem;
+      margin-bottom: 4rem;
+    }
+
+    .design-card {
+      background: #1a1a1a;
+      border-radius: 16px;
+      overflow: hidden;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      border: 1px solid #2a2a2a;
+    }
+
+    .design-card:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 20px 40px rgba(254, 233, 0, 0.1);
+      border-color: #fee900;
+    }
+
+    .design-preview {
+      position: relative;
+      height: 240px;
+      overflow: hidden;
+      background: #111;
+    }
+
+    .design-preview img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: top;
+      transition: transform 0.5s ease;
+    }
+
+    .design-card:hover .design-preview img {
+      transform: scale(1.05);
+    }
+
+    .design-badge {
+      position: absolute;
+      top: 1rem;
+      left: 1rem;
+      background: #fee900;
+      color: #000;
+      padding: 0.4rem 0.8rem;
+      border-radius: 50px;
+      font-size: 0.75rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+    }
+
+    .design-info {
+      padding: 1.5rem;
+    }
+
+    .design-info h2 {
+      font-size: 1.25rem;
+      margin-bottom: 0.5rem;
+      color: #fff;
+    }
+
+    .design-info p {
+      color: #888;
+      font-size: 0.9rem;
+      line-height: 1.6;
+      margin-bottom: 1.25rem;
+    }
+
+    .design-features {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.5rem;
+      margin-bottom: 1.25rem;
+    }
+
+    .feature-tag {
+      background: #252525;
+      color: #aaa;
+      padding: 0.35rem 0.75rem;
+      border-radius: 50px;
+      font-size: 0.75rem;
+    }
+
+    .view-btn {
+      display: block;
+      width: 100%;
+      padding: 1rem;
+      background: #fee900;
+      color: #000;
+      text-decoration: none;
+      text-align: center;
+      font-weight: 600;
+      border-radius: 8px;
+      transition: background 0.2s ease;
+    }
+
+    .view-btn:hover {
+      background: #e6d200;
+    }
+
+    .instructions {
+      background: #1a1a1a;
+      border-radius: 12px;
+      padding: 2rem;
+      border: 1px solid #2a2a2a;
+    }
+
+    .instructions h3 {
+      font-size: 1.1rem;
+      margin-bottom: 1rem;
+      color: #fee900;
+    }
+
+    .instructions ul {
+      list-style: none;
+      color: #888;
+      line-height: 1.8;
+    }
+
+    .instructions li {
+      padding-left: 1.5rem;
+      position: relative;
+    }
+
+    .instructions li::before {
+      content: "•";
+      color: #fee900;
+      position: absolute;
+      left: 0;
+    }
+
+    footer {
+      text-align: center;
+      padding: 2rem;
+      color: #555;
+      font-size: 0.85rem;
+    }
+
+    footer a {
+      color: #fee900;
+      text-decoration: none;
+    }
+
+    @media (max-width: 768px) {
+      h1 {
+        font-size: 1.75rem;
+      }
+
+      .designs-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .container {
+        padding: 2rem 1rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div class="logo">
+        <img src="img/florida-sealcoating.png" alt="Florida Sealcoating">
+      </div>
+      <h1>Website Design Review</h1>
+      <p class="subtitle">Please review the 3 homepage design options below. Click on any design to view the full page. All designs are fully responsive - try viewing on mobile too!</p>
+    </header>
+
+    <div class="designs-grid">
+      <!-- Design A -->
+      <article class="design-card">
+        <div class="design-preview">
+          <span class="design-badge">Design A</span>
+          <img src="img/bg/asphalt-services.jpg" alt="Design A Preview">
+        </div>
+        <div class="design-info">
+          <h2>Video Hero + Lead Form</h2>
+          <p>Full-width video background with integrated quote form. Stats bar, services grid, FAQ section, and trust elements.</p>
+          <div class="design-features">
+            <span class="feature-tag">Video Hero</span>
+            <span class="feature-tag">Inline Form</span>
+            <span class="feature-tag">FAQ Section</span>
+            <span class="feature-tag">Montserrat Font</span>
+          </div>
+          <a href="index-design-a.html" class="view-btn">View Design A</a>
+        </div>
+      </article>
+
+      <!-- Design B -->
+      <article class="design-card">
+        <div class="design-preview">
+          <span class="design-badge">Design B</span>
+          <img src="img/misc/asphalt-paving/asphalt-paving-1.webp" alt="Design B Preview">
+        </div>
+        <div class="design-info">
+          <h2>Split Hero + Quote Form</h2>
+          <p>Side-by-side layout with video on left and prominent quote form on right. Tabbed services section and testimonials.</p>
+          <div class="design-features">
+            <span class="feature-tag">Split Layout</span>
+            <span class="feature-tag">Service Tabs</span>
+            <span class="feature-tag">Testimonials</span>
+            <span class="feature-tag">Playfair Font</span>
+          </div>
+          <a href="index-design-b.html" class="view-btn">View Design B</a>
+        </div>
+      </article>
+
+      <!-- Design C -->
+      <article class="design-card">
+        <div class="design-preview">
+          <span class="design-badge">Design C</span>
+          <img src="img/misc/service_overview/sealcoating.jpg" alt="Design C Preview">
+        </div>
+        <div class="design-info">
+          <h2>Stats Hero + Hover Cards</h2>
+          <p>Animated stats counters, interactive service hover cards, process timeline, and comprehensive FAQ with schema markup.</p>
+          <div class="design-features">
+            <span class="feature-tag">Animated Stats</span>
+            <span class="feature-tag">Hover Cards</span>
+            <span class="feature-tag">Process Timeline</span>
+            <span class="feature-tag">Poppins Font</span>
+          </div>
+          <a href="index-design-c.html" class="view-btn">View Design C</a>
+        </div>
+      </article>
+    </div>
+
+    <div class="instructions">
+      <h3>Review Instructions</h3>
+      <ul>
+        <li>Click each design to view the full homepage</li>
+        <li>Test on both desktop and mobile devices</li>
+        <li>Check the navigation, scroll behavior, and interactive elements</li>
+        <li>Note which design elements you prefer from each option</li>
+        <li>We can mix and match elements from different designs</li>
+      </ul>
+    </div>
+  </div>
+
+  <footer>
+    <p>Prepared by <a href="https://www.rekmarketing.com/" target="_blank">REK Marketing & Design</a></p>
+  </footer>
+</body>
+</html>
