@@ -27,7 +27,7 @@
   <link rel="stylesheet" type="text/css" href="css/interior.css">
 
   <!-- Video Preload -->
-  <link rel="preload" as="video" href="images/Asphalt Paving Orlando.mp4">
+  <link rel="preload" as="video" href="images/Asphalt%20Paving%20Orlando.mp4">
 
   <!-- Design A Font Override -->
   <style>
@@ -64,19 +64,60 @@
     gtag('js', new Date());
     gtag('config', 'G-SY7PX8ER88');
   </script>
+  <!-- Google Tag Manager -->
+  <script>(function (w, d, s, l, i) {
+      w[l] = w[l] || []; w[l].push({
+        'gtm.start':
+          new Date().getTime(), event: 'gtm.js'
+      }); var f = d.getElementsByTagName(s)[0],
+        j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+          'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
+    })(window, document, 'script', 'dataLayer', 'GTM-TN6BB673');</script>
+  <!-- End Google Tag Manager -->
+
+  <!-- Breadcrumb Schema -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Home",
+        "item": "https://floridasealcoating.com/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Services",
+        "item": "https://floridasealcoating.com/services.html"
+      },
+      {
+        "@type": "ListItem",
+        "position": 3,
+        "name": "Asphalt Paving",
+        "item": "https://floridasealcoating.com/asphalt-paving.html"
+      }
+    ]
+  }
+  </script>
 </head>
 
 <body id="top" class="redesign-page">
+  <!-- Google Tag Manager (noscript) -->
+  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TN6BB673" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+  <!-- End Google Tag Manager (noscript) -->
 
   <!-- Modern Header -->
   <header class="modern-header" id="mainHeader">
     <div class="header-inner">
-      <a href="index-design-a.html" class="logo">
+      <a href="index.html" class="logo">
         <img src="img/florida-sealcoating.png" alt="Florida Sealcoating LLC" width="210" height="52">
       </a>
 
       <nav class="modern-nav" id="mainNav">
-        <a href="index-design-a.html">Home</a>
+        <a href="index.html">Home</a>
         <a href="about.html">About</a>
 
         <details class="nav-dropdown">
@@ -96,10 +137,10 @@
         <a href="commercial.html">Commercial</a>
 
         <details class="nav-dropdown">
-          <summary>Locations</summary>
+          <summary>Areas We Serve</summary>
           <div class="dropdown-content">
-            <a href="orlando.html">Orlando</a>
-            <a href="sanford.html">Sanford</a>
+            <a href="locations/orlando.html">Orlando</a>
+            <a href="locations/sanford.html">Sanford</a>
           </div>
         </details>
 
@@ -120,10 +161,21 @@
     </div>
   </header>
 
+  <!-- Breadcrumb Navigation -->
+  <nav class="breadcrumb-nav" aria-label="Breadcrumb">
+    <div class="container">
+      <ol class="breadcrumb-list">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li aria-current="page">Asphalt Paving</li>
+      </ol>
+    </div>
+  </nav>
+
   <!-- Interior Hero with Video Background -->
   <section class="interior-hero interior-hero-video">
     <video class="hero-video" autoplay muted loop playsinline disablePictureInPicture poster="img/misc/service_overview/patching.png">
-      <source src="images/Asphalt Paving Orlando.mp4" type="video/mp4">
+      <source src="images/Asphalt%20Paving%20Orlando.mp4" type="video/mp4">
     </video>
     <div class="hero-overlay"></div>
     <div class="hero-content">
@@ -172,7 +224,7 @@
           <p>Our experienced crews use premium materials and advanced equipment to ensure your new asphalt looks great and performs for years to come.</p>
         </div>
         <div class="content-image">
-          <img src="img/gallery/asphalt-service-3.jpg" alt="Professional asphalt paving" loading="lazy">
+          <img src="img/gallery/asphalt-service-3.jpg" alt="Professional asphalt paving crew installing new driveway in Orlando, Florida" loading="lazy">
         </div>
       </div>
     </div>
@@ -183,7 +235,7 @@
     <div class="container">
       <div class="content-grid reverse">
         <div class="content-text">
-          <h2>Commercial <span>Asphalt Paving</span></h2>
+          <h2>Commercial Asphalt Paving</h2>
           <p>Our commercial paving services are designed to meet the demands of high-traffic properties and fast-paced businesses. We handle:</p>
           <ul class="benefits-list">
             <li><i class="fa fa-check"></i> <strong>New Parking Lot Paving:</strong> Complete installation from base preparation to final striping</li>
@@ -195,7 +247,7 @@
           <p>We work around your schedule to minimize disruption to your business operations.</p>
         </div>
         <div class="content-image">
-          <img src="img/misc/service_overview/sealcoating.jpg" alt="Commercial asphalt paving" loading="lazy">
+          <img src="img/misc/service_overview/sealcoating.jpg" alt="Commercial parking lot asphalt paving project in Central Florida" loading="lazy">
         </div>
       </div>
     </div>
@@ -235,6 +287,20 @@
     </div>
   </section>
 
+  <!-- Mid-Page CTA -->
+  <section class="cta-section">
+    <div class="container">
+      <div class="cta-content">
+        <h2>Get Your <span>Free Estimate</span></h2>
+        <p>Ready to transform your property with quality asphalt paving? Contact us today for a no-obligation consultation.</p>
+        <div class="cta-buttons">
+          <a href="contact.html" class="btn-modern btn-primary btn-lg">Request Estimate</a>
+          <a href="tel:4079423681" class="btn-modern btn-outline btn-lg"><i class="fa fa-phone"></i> (407) 942-3681</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
   <!-- Why Choose Us -->
   <section class="content-section bg-white">
     <div class="container">
@@ -249,10 +315,13 @@
             <li><i class="fa fa-check"></i> <strong>Clear Communication:</strong> From estimate to completion, we keep you informed</li>
             <li><i class="fa fa-check"></i> <strong>Customer First:</strong> We prioritize responsiveness, accuracy, and deadlines</li>
           </ul>
-          <a href="contact.html" class="btn-modern btn-primary" style="margin-top: 1rem;">Get Free Estimate</a>
+          <div style="margin-top: 1rem; display: flex; gap: 1rem; flex-wrap: wrap; align-items: center;">
+            <a href="contact.html" class="btn-modern btn-primary">Get Free Estimate</a>
+            <a href="tel:4079423681" class="btn-modern btn-outline"><i class="fa fa-phone"></i> (407) 942-3681</a>
+          </div>
         </div>
         <div class="content-image">
-          <img src="img/misc/about/high-quality-asphalt-services.jpg" alt="Quality asphalt paving" loading="lazy">
+          <img src="img/misc/about/high-quality-asphalt-services.jpg" alt="Florida Sealcoating crew finishing quality asphalt driveway in Orlando" loading="lazy">
         </div>
       </div>
     </div>
@@ -265,7 +334,7 @@
     </div>
 
     <div class="faq-list">
-      <details class="faq-item">
+      <details class="faq-item" open>
         <summary>How much does asphalt paving cost in Orlando?</summary>
         <div class="faq-answer">
           Asphalt paving typically costs $3-5 per square foot depending on the project size and base preparation needed. We provide detailed, itemized estimates at no charge so you know exactly what to expect.
@@ -306,6 +375,21 @@
           Yes, we handle all necessary permits and coordinate inspections as required by local jurisdictions. This is included in our project management services.
         </div>
       </details>
+    </div>
+
+    <!-- Service Area Links -->
+    <div class="service-areas-inline" style="max-width: 800px; margin: 2rem auto 0; padding: 0 2rem; text-align: center;">
+      <p style="font-size: 0.95rem; color: var(--color-text-light);">
+        <strong>Serving Orlando &amp; Central Florida:</strong>
+        <a href="locations/orlando.html">Orlando</a> •
+        <a href="locations/sanford.html">Sanford</a> •
+        Winter Park •
+        Kissimmee •
+        Altamonte Springs •
+        Lake Mary •
+        Oviedo •
+        Winter Garden
+      </p>
     </div>
   </section>
 
@@ -355,7 +439,7 @@
     <div class="container">
       <h2>Ready for a New <span>Asphalt Surface</span>?</h2>
       <p>Get a free, no-obligation estimate for professional asphalt paving services. Our team is ready to help with your project.</p>
-      <a href="tel:4079423681" class="phone-display">
+      <a href="tel:4079423681" class="phone-display" onclick="gtag('event', 'conversion', {'send_to': 'AW-17827074108/YQvoCMat1NYbELygzrRC'});">
         <i class="fa fa-phone"></i> (407) 942-3681
       </a>
       <div class="cta-buttons">
@@ -369,7 +453,7 @@
   <footer class="modern-footer">
     <div class="footer-grid">
       <div class="footer-brand">
-        <img src="img/florida-sealcoating-1.png" alt="Florida Sealcoating LLC" class="footer-logo">
+        <img src="img/florida-sealcoating-1.png" alt="Florida Sealcoating LLC" class="footer-logo" style="max-width: 180px; height: auto;">
         <p>Orlando's trusted sealcoating &amp; asphalt paving contractor since 2002. Commercial &amp; residential services with 90% repeat customers.</p>
         <div class="footer-social">
           <a href="https://www.facebook.com/floridasealcoating/" target="_blank" aria-label="Facebook">
@@ -397,19 +481,20 @@
       </div>
 
       <div class="footer-column">
-        <h4>Company</h4>
+        <h4>Service Areas</h4>
         <ul>
-          <li><a href="about.html">About Us</a></li>
-          <li><a href="residential.html">Residential</a></li>
-          <li><a href="commercial.html">Commercial</a></li>
-          <li><a href="contact.html">Contact</a></li>
+          <li><a href="locations/orlando.html">Orlando</a></li>
+          <li><a href="locations/sanford.html">Sanford</a></li>
+          <li><a href="locations/altamonte-springs.html">Altamonte Springs</a></li>
+          <li><a href="locations/oviedo.html">Oviedo</a></li>
+          <li><a href="locations/winter-springs.html">Winter Springs</a></li>
         </ul>
       </div>
 
       <div class="footer-column">
         <h4>Contact</h4>
         <ul>
-          <li><a href="tel:4079423681">(407) 942-3681</a></li>
+          <li><a href="tel:4079423681" onclick="gtag('event', 'conversion', {'send_to': 'AW-17827074108/YQvoCMat1NYbELygzrRC'});">(407) 942-3681</a></li>
           <li><a href="contact.html">Contact Form</a></li>
           <li>Mon-Fri: 8AM-5PM</li>
         </ul>
@@ -423,7 +508,7 @@
 
     <div class="footer-bottom">
       <div class="container">
-        <span>&copy; 2025 Florida Sealcoating LLC. All Rights Reserved.</span>
+        <span>&copy; 2026 Florida Sealcoating LLC. All Rights Reserved.</span>
         <span>Web Design, SEO &amp; Hosting by <a href="https://www.rekmarketing.com/" target="_blank">REK Marketing &amp; Design</a></span>
       </div>
     </div>
@@ -432,7 +517,7 @@
   <!-- Sticky Mobile CTA Bar -->
   <div class="sticky-cta-bar">
     <div class="cta-inner">
-      <a href="tel:4079423681" class="cta-call">
+      <a href="tel:4079423681" class="cta-call" onclick="gtag('event', 'conversion', {'send_to': 'AW-17827074108/YQvoCMat1NYbELygzrRC'});">
         <i class="fa fa-phone"></i> Call Now
       </a>
       <a href="contact.html" class="cta-quote">Free Quote</a>

@@ -61,19 +61,32 @@
     gtag('js', new Date());
     gtag('config', 'G-SY7PX8ER88');
   </script>
+  <!-- Google Tag Manager -->
+  <script>(function (w, d, s, l, i) {
+      w[l] = w[l] || []; w[l].push({
+        'gtm.start':
+          new Date().getTime(), event: 'gtm.js'
+      }); var f = d.getElementsByTagName(s)[0],
+        j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+          'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
+    })(window, document, 'script', 'dataLayer', 'GTM-TN6BB673');</script>
+  <!-- End Google Tag Manager -->
 </head>
 
 <body id="top" class="redesign-page">
+  <!-- Google Tag Manager (noscript) -->
+  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TN6BB673" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+  <!-- End Google Tag Manager (noscript) -->
 
   <!-- Modern Header -->
   <header class="modern-header" id="mainHeader">
     <div class="header-inner">
-      <a href="index-design-a.html" class="logo">
+      <a href="index.html" class="logo">
         <img src="img/florida-sealcoating.png" alt="Florida Sealcoating LLC" width="210" height="52">
       </a>
 
       <nav class="modern-nav" id="mainNav">
-        <a href="index-design-a.html">Home</a>
+        <a href="index.html">Home</a>
         <a href="about.html">About</a>
 
         <details class="nav-dropdown">
@@ -93,10 +106,10 @@
         <a href="commercial.html">Commercial</a>
 
         <details class="nav-dropdown">
-          <summary>Locations</summary>
+          <summary>Areas We Serve</summary>
           <div class="dropdown-content">
-            <a href="orlando.html">Orlando</a>
-            <a href="sanford.html">Sanford</a>
+            <a href="locations/orlando.html">Orlando</a>
+            <a href="locations/sanford.html">Sanford</a>
           </div>
         </details>
 
@@ -155,6 +168,16 @@
       </div>
     </div>
   </div>
+
+  <!-- Breadcrumb Navigation -->
+  <nav class="breadcrumb-nav" aria-label="Breadcrumb">
+    <div class="container">
+      <ol class="breadcrumb-list">
+        <li><a href="index.html">Home</a></li>
+        <li aria-current="page">Commercial</li>
+      </ol>
+    </div>
+  </nav>
 
   <!-- Introduction Section -->
   <section class="content-section bg-white">
@@ -259,7 +282,7 @@
 
       <div class="content-grid">
         <div class="content-text">
-          <h3 style="color: var(--color-primary); margin-bottom: 1rem;">Parking Lot Maintenance</h3>
+          <h3 style="color: var(--color-dark); border-left: 4px solid var(--color-primary); padding-left: 12px; margin-bottom: 1rem;">Parking Lot Maintenance</h3>
           <ul class="benefits-list">
             <li><i class="fa fa-check"></i> <strong>Sealcoating:</strong> Protect your asphalt from UV damage, water penetration, and oxidation</li>
             <li><i class="fa fa-check"></i> <strong>Crack Sealing:</strong> Hot rubberized crack filling prevents water damage and deterioration</li>
@@ -268,7 +291,7 @@
           </ul>
         </div>
         <div class="content-text">
-          <h3 style="color: var(--color-primary); margin-bottom: 1rem;">Paving &amp; Construction</h3>
+          <h3 style="color: var(--color-dark); border-left: 4px solid var(--color-primary); padding-left: 12px; margin-bottom: 1rem;">Paving &amp; Construction</h3>
           <ul class="benefits-list">
             <li><i class="fa fa-check"></i> <strong>New Parking Lots:</strong> Complete installation from base preparation to final striping</li>
             <li><i class="fa fa-check"></i> <strong>Resurfacing:</strong> Mill and overlay to restore worn surfaces</li>
@@ -280,7 +303,7 @@
 
       <div class="content-grid" style="margin-top: 2rem;">
         <div class="content-text">
-          <h3 style="color: var(--color-primary); margin-bottom: 1rem;">Striping &amp; Marking</h3>
+          <h3 style="color: var(--color-dark); border-left: 4px solid var(--color-primary); padding-left: 12px; margin-bottom: 1rem;">Striping &amp; Marking</h3>
           <ul class="benefits-list">
             <li><i class="fa fa-check"></i> <strong>Parking Stalls:</strong> Standard, compact, and angled layouts optimized for capacity</li>
             <li><i class="fa fa-check"></i> <strong>ADA Compliance:</strong> Handicap spaces, access aisles, and signage</li>
@@ -289,7 +312,7 @@
           </ul>
         </div>
         <div class="content-text">
-          <h3 style="color: var(--color-primary); margin-bottom: 1rem;">Additional Services</h3>
+          <h3 style="color: var(--color-dark); border-left: 4px solid var(--color-primary); padding-left: 12px; margin-bottom: 1rem;">Additional Services</h3>
           <ul class="benefits-list">
             <li><i class="fa fa-check"></i> <strong>Speed Bumps:</strong> Rubber or asphalt speed control solutions</li>
             <li><i class="fa fa-check"></i> <strong>Concrete Curbs:</strong> Wheel stops, curbing, and drainage improvements</li>
@@ -331,7 +354,7 @@
     </div>
 
     <div class="faq-list">
-      <details class="faq-item">
+      <details class="faq-item" open>
         <summary>How much does commercial parking lot maintenance cost?</summary>
         <div class="faq-answer">
           Costs vary based on the size and condition of your lot. Sealcoating typically runs $0.08-$0.15 per square foot for commercial lots. Striping, crack sealing, and repairs are quoted separately based on the scope of work. We provide free, detailed estimates so you know exactly what to expect.
@@ -372,6 +395,10 @@
           Absolutely. We can assess your property and develop a multi-year maintenance plan that schedules sealcoating, crack sealing, striping refreshes, and repairs at optimal intervals. This proactive approach minimizes costs and prevents major problems.
         </div>
       </details>
+    </div>
+
+    <div class="service-area-note">
+      <p>We provide professional commercial asphalt services throughout <a href="locations/orlando.html">Orlando</a>, <a href="locations/sanford.html">Sanford</a>, Altamonte Springs, Lake Mary, Winter Park, and all of Central Florida. <a href="contact.html">Contact us</a> for service in your area.</p>
     </div>
   </section>
 
@@ -421,7 +448,7 @@
     <div class="container">
       <h2>Ready to Improve Your <span>Parking Lot</span>?</h2>
       <p>Get a free, no-obligation estimate for your commercial asphalt project. Our team is ready to help protect your property and impress your customers.</p>
-      <a href="tel:4079423681" class="phone-display">
+      <a href="tel:4079423681" class="phone-display" onclick="gtag('event', 'conversion', {'send_to': 'AW-17827074108/YQvoCMat1NYbELygzrRC'});">
         <i class="fa fa-phone"></i> (407) 942-3681
       </a>
       <div class="cta-buttons">
@@ -435,7 +462,7 @@
   <footer class="modern-footer">
     <div class="footer-grid">
       <div class="footer-brand">
-        <img src="img/florida-sealcoating-1.png" alt="Florida Sealcoating LLC" class="footer-logo">
+        <img src="img/florida-sealcoating-1.png" alt="Florida Sealcoating LLC" class="footer-logo" style="max-width: 180px; height: auto;">
         <p>Orlando's trusted sealcoating &amp; asphalt paving contractor since 2002. Commercial &amp; residential services with 90% repeat customers.</p>
         <div class="footer-social">
           <a href="https://www.facebook.com/floridasealcoating/" target="_blank" aria-label="Facebook">
@@ -463,19 +490,20 @@
       </div>
 
       <div class="footer-column">
-        <h4>Company</h4>
+        <h4>Service Areas</h4>
         <ul>
-          <li><a href="about.html">About Us</a></li>
-          <li><a href="residential.html">Residential</a></li>
-          <li><a href="commercial.html">Commercial</a></li>
-          <li><a href="contact.html">Contact</a></li>
+          <li><a href="locations/orlando.html">Orlando</a></li>
+          <li><a href="locations/sanford.html">Sanford</a></li>
+          <li><a href="locations/altamonte-springs.html">Altamonte Springs</a></li>
+          <li><a href="locations/oviedo.html">Oviedo</a></li>
+          <li><a href="locations/winter-springs.html">Winter Springs</a></li>
         </ul>
       </div>
 
       <div class="footer-column">
         <h4>Contact</h4>
         <ul>
-          <li><a href="tel:4079423681">(407) 942-3681</a></li>
+          <li><a href="tel:4079423681" onclick="gtag('event', 'conversion', {'send_to': 'AW-17827074108/YQvoCMat1NYbELygzrRC'});">(407) 942-3681</a></li>
           <li><a href="contact.html">Contact Form</a></li>
           <li>Mon-Fri: 8AM-5PM</li>
         </ul>
@@ -489,7 +517,7 @@
 
     <div class="footer-bottom">
       <div class="container">
-        <span>&copy; 2025 Florida Sealcoating LLC. All Rights Reserved.</span>
+        <span>&copy; 2026 Florida Sealcoating LLC. All Rights Reserved.</span>
         <span>Web Design, SEO &amp; Hosting by <a href="https://www.rekmarketing.com/" target="_blank">REK Marketing &amp; Design</a></span>
       </div>
     </div>
@@ -498,7 +526,7 @@
   <!-- Sticky Mobile CTA Bar -->
   <div class="sticky-cta-bar">
     <div class="cta-inner">
-      <a href="tel:4079423681" class="cta-call">
+      <a href="tel:4079423681" class="cta-call" onclick="gtag('event', 'conversion', {'send_to': 'AW-17827074108/YQvoCMat1NYbELygzrRC'});">
         <i class="fa fa-phone"></i> Call Now
       </a>
       <a href="contact.html" class="cta-quote">Free Quote</a>
@@ -537,6 +565,28 @@
         });
       }
     });
+  </script>
+
+  <!-- Breadcrumb Schema -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Home",
+        "item": "https://www.floridasealcoating.com/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Commercial",
+        "item": "https://www.floridasealcoating.com/commercial.html"
+      }
+    ]
+  }
   </script>
 
   <!-- Structured Data -->

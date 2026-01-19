@@ -35,12 +35,16 @@
 /* Video Background Hero */
 .interior-hero-video .hero-video {
   position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
+  top: 50%;
+  left: 50%;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  transform: translate(-50%, -50%);
   object-fit: cover;
   z-index: 0;
+  opacity: 0.5;
 }
 
 .interior-hero .hero-overlay {
@@ -169,15 +173,18 @@
   color: var(--color-white);
 }
 
+/* Yellow highlight on light backgrounds for content sections */
 .content-text h2 span {
-  background: var(--color-dark);
-  color: var(--color-primary);
-  padding: 0 0.5rem;
+  color: var(--color-dark);
+  background: linear-gradient(to top, var(--color-primary) 30%, transparent 30%);
+  padding: 0 4px;
 }
 
+/* White text on dark background sections */
 .content-section.bg-dark .content-text h2 span {
-  background: var(--color-primary);
-  color: var(--color-dark);
+  color: var(--color-white);
+  background: none;
+  padding: 0;
 }
 
 .content-text p {
@@ -207,35 +214,54 @@
 }
 
 .benefits-list li {
-  display: flex;
-  align-items: flex-start;
-  gap: 1rem;
-  padding: 0.75rem 0;
-  font-size: 1.05rem;
+  padding: 0.6rem 0;
+  font-size: 0.95rem;
+  line-height: 1.6;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+  padding-left: 1.5rem;
+  position: relative;
+}
+
+.benefits-list li:last-child {
+  border-bottom: none;
 }
 
 .benefits-list li i {
+  position: absolute;
+  left: 0;
+  top: 0.7rem;
   color: var(--color-primary);
-  font-size: 1.1rem;
-  margin-top: 0.2rem;
-  flex-shrink: 0;
+  font-size: 0.9rem;
+}
+
+.benefits-list li strong {
+  color: var(--color-dark);
+  font-weight: 600;
 }
 
 .content-section.bg-dark .benefits-list li {
-  color: var(--color-white);
+  color: rgba(255, 255, 255, 0.9);
+  border-bottom-color: rgba(255, 255, 255, 0.15);
 }
 
 .content-section.bg-dark .benefits-list li strong {
   color: var(--color-white);
+  font-weight: 700;
+}
+
+.content-section.bg-white .benefits-list li,
+.content-section.bg-light .benefits-list li {
+  border-bottom-color: rgba(0, 0, 0, 0.08);
+}
+
+.content-section.bg-white .benefits-list li strong,
+.content-section.bg-light .benefits-list li strong {
+  color: var(--color-dark);
 }
 
 .content-section.bg-dark .content-text h2,
 .content-section.bg-dark .content-text p {
   color: var(--color-white);
-}
-
-.content-section.bg-dark .content-text h2 span {
-  color: var(--color-primary);
 }
 
 /* ============================================
@@ -261,10 +287,11 @@
   color: var(--color-dark);
 }
 
+/* Yellow highlight on light background (process section) */
 .process-section .section-header h2 span {
-  background: var(--color-dark);
-  color: var(--color-primary);
-  padding: 0 0.5rem;
+  color: var(--color-dark);
+  background: linear-gradient(to top, var(--color-primary) 30%, transparent 30%);
+  padding: 0 4px;
 }
 
 .process-grid {
@@ -362,10 +389,11 @@
   color: var(--color-dark);
 }
 
+/* Yellow highlight on light background (FAQ section) */
 .interior-faq .section-header h2 span {
-  background: var(--color-dark);
-  color: var(--color-primary);
-  padding: 0 0.5rem;
+  color: var(--color-dark);
+  background: linear-gradient(to top, var(--color-primary) 30%, transparent 30%);
+  padding: 0 4px;
 }
 
 /* FAQ Accordion Styles */
@@ -766,8 +794,19 @@
   line-height: 1.2;
 }
 
+/* Yellow text with underline highlight on light backgrounds (WCAG compliant) */
 .section-header h2 span {
+  color: var(--color-dark);
+  background: linear-gradient(to top, var(--color-primary) 30%, transparent 30%);
+  padding: 0 4px;
+}
+
+/* Yellow text on dark backgrounds - good contrast */
+.bg-dark .section-header h2 span,
+.content-section.bg-dark .section-header h2 span {
   color: var(--color-primary);
+  background: none;
+  padding: 0;
 }
 
 .section-header p {
@@ -1172,6 +1211,34 @@ a.service-card:hover .card-title {
   color: var(--color-primary);
 }
 
+/* Enhanced hover effects for service cards */
+.related-services .service-card,
+.services-hub-grid .service-card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.related-services .service-card:hover,
+.services-hub-grid .service-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.15);
+}
+
+/* Image zoom on hover */
+.related-services .service-card .card-image,
+.services-hub-grid .service-card .card-image {
+  overflow: hidden;
+}
+
+.related-services .service-card .card-image img,
+.services-hub-grid .service-card .card-image img {
+  transition: transform 0.4s ease;
+}
+
+.related-services .service-card:hover .card-image img,
+.services-hub-grid .service-card:hover .card-image img {
+  transform: scale(1.05);
+}
+
 /* Only underline the "Learn More" link on hover */
 a.service-card .card-link:hover {
   text-decoration: underline;
@@ -1425,4 +1492,161 @@ a.service-card .card-link:hover {
   .work-gallery {
     grid-template-columns: 1fr;
   }
+}
+
+/* ============================================
+   Breadcrumb Navigation (New Styled Version)
+   ============================================ */
+.breadcrumb-nav {
+  background: #f5f5f5;
+  padding: 12px 0;
+  font-size: 14px;
+}
+
+.breadcrumb-nav .container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+.breadcrumb-list {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.breadcrumb-list li:not(:last-child)::after {
+  content: "/";
+  margin-left: 8px;
+  color: #999;
+}
+
+.breadcrumb-list a {
+  color: #666;
+  text-decoration: none;
+}
+
+.breadcrumb-list a:hover {
+  color: #1d1d1e;
+  text-decoration: underline;
+}
+
+.breadcrumb-list li[aria-current="page"] {
+  color: #1d1d1e;
+  font-weight: 600;
+}
+
+@media (max-width: 768px) {
+  .breadcrumb-nav {
+    display: none;
+  }
+}
+
+/* ============================================
+   Service Area Note (Below FAQ)
+   ============================================ */
+.service-area-note {
+  text-align: center;
+  padding: 24px;
+  background: #f9f9f9;
+  margin-top: -1px;
+  border-top: 1px solid #e0e0e0;
+}
+
+.service-area-note p {
+  margin: 0;
+  color: var(--color-text-light);
+  font-size: 0.95rem;
+  line-height: 1.6;
+}
+
+.service-area-note a {
+  color: var(--color-dark);
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.service-area-note a:hover {
+  color: var(--color-primary);
+  text-decoration: underline;
+}
+
+/* ============================================
+   Section CTA (After Process Sections)
+   ============================================ */
+.section-cta {
+  text-align: center;
+  margin-top: 48px;
+  padding-top: 32px;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.section-cta p {
+  margin-bottom: 16px;
+  font-size: 18px;
+  color: var(--color-text-light);
+}
+
+.bg-dark .section-cta p,
+.process-section .section-cta p {
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.bg-dark .section-cta,
+.process-section .section-cta {
+  border-top-color: rgba(255, 255, 255, 0.1);
+}
+
+.bg-light .section-cta,
+.bg-white .section-cta {
+  border-top-color: rgba(0, 0, 0, 0.1);
+}
+
+/* ============================================
+   Inline Testimonial
+   ============================================ */
+.inline-testimonial {
+  background: rgba(255, 255, 255, 0.05);
+  border-left: 4px solid var(--color-primary);
+  padding: 24px;
+  margin: 32px 0;
+  font-style: italic;
+}
+
+.inline-testimonial p {
+  margin-bottom: 12px;
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+.inline-testimonial cite {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-style: normal;
+  font-size: 14px;
+  flex-wrap: wrap;
+}
+
+.inline-testimonial .stars {
+  color: var(--color-primary);
+}
+
+.bg-white .inline-testimonial,
+.bg-light .inline-testimonial {
+  background: rgba(0, 0, 0, 0.03);
+}
+
+/* ============================================
+   Smooth Scroll & Anchor Offset
+   ============================================ */
+html {
+  scroll-behavior: smooth;
+}
+
+:target {
+  scroll-margin-top: 100px;
 }
