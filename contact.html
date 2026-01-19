@@ -1,0 +1,767 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Contact Florida Sealcoating for free estimates on asphalt services in Orlando. Call (407) 942-3681 or visit our Orlando and Sanford locations.">
+
+  <title>Contact Us | Florida Sealcoating | Orlando Asphalt Services</title>
+
+  <link rel="apple-touch-icon" sizes="144x144" href="img/favicon/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="img/favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="img/favicon/favicon-16x16.png">
+  <link rel="manifest" href="img/favicon/site.webmanifest">
+  <link rel="mask-icon" href="img/favicon/safari-pinned-tab.svg" color="#fee900">
+  <meta name="theme-color" content="#1d1d1e">
+
+  <!-- Fonts - Matches Design A (Oswald) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+  <link href="fonts/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+
+  <!-- Stylesheets -->
+  <link rel="stylesheet" type="text/css" href="css/modern-redesign.css">
+  <link rel="stylesheet" type="text/css" href="css/interior.css">
+
+  <!-- Design A Font Override -->
+  <style>
+    h1, h2, h3, h4, h5, h6,
+    .hero-title,
+    .card-title,
+    .section-header h2,
+    .process-step h3,
+    .content-text h2 {
+      font-family: 'Oswald', sans-serif !important;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+    }
+
+    /* Contact Page Specific Styles */
+    .contact-section {
+      padding: 4rem 0;
+      background: var(--color-white);
+    }
+
+    .contact-grid {
+      display: grid;
+      grid-template-columns: 1fr 1.2fr;
+      gap: 3rem;
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 2rem;
+    }
+
+    .contact-info {
+      background: var(--color-gray-light);
+      padding: 2.5rem;
+      border-radius: var(--border-radius-lg);
+      border-left: 4px solid var(--color-primary);
+    }
+
+    .contact-info h3 {
+      font-family: 'Oswald', sans-serif !important;
+      font-size: 1.5rem;
+      text-transform: uppercase;
+      color: var(--color-dark);
+      margin-bottom: 1.5rem;
+    }
+
+    .contact-info-item {
+      display: flex;
+      align-items: flex-start;
+      gap: 1rem;
+      margin-bottom: 1.5rem;
+    }
+
+    .contact-info-item i {
+      color: var(--color-primary);
+      font-size: 1.25rem;
+      width: 24px;
+      text-align: center;
+      margin-top: 0.2rem;
+    }
+
+    .contact-info-item .info-content {
+      flex: 1;
+    }
+
+    .contact-info-item .info-label {
+      font-weight: 600;
+      color: var(--color-dark);
+      display: block;
+      margin-bottom: 0.25rem;
+    }
+
+    .contact-info-item .info-value {
+      color: var(--color-text-light);
+      line-height: 1.6;
+    }
+
+    .contact-info-item .info-value a {
+      color: var(--color-dark);
+      text-decoration: none;
+      font-weight: 600;
+      font-size: 1.25rem;
+    }
+
+    .contact-info-item .info-value a:hover {
+      color: var(--color-primary);
+    }
+
+    .contact-social {
+      display: flex;
+      gap: 1rem;
+      margin-top: 2rem;
+      padding-top: 1.5rem;
+      border-top: 1px solid #ddd;
+    }
+
+    .contact-social a {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 44px;
+      height: 44px;
+      background: var(--color-dark);
+      color: var(--color-white);
+      border-radius: 50%;
+      font-size: 1.25rem;
+      transition: background var(--transition-fast), transform var(--transition-fast);
+    }
+
+    .contact-social a:hover {
+      background: var(--color-primary);
+      color: var(--color-dark);
+      transform: translateY(-3px);
+    }
+
+    .contact-form-wrapper {
+      background: var(--color-dark);
+      padding: 2.5rem;
+      border-radius: var(--border-radius-lg);
+    }
+
+    .contact-form-wrapper h3 {
+      font-family: 'Oswald', sans-serif !important;
+      font-size: 1.5rem;
+      text-transform: uppercase;
+      color: var(--color-white);
+      margin-bottom: 1.5rem;
+    }
+
+    .contact-form .form-group {
+      margin-bottom: 1.25rem;
+    }
+
+    .contact-form label {
+      display: block;
+      color: var(--color-white);
+      margin-bottom: 0.5rem;
+      font-weight: 500;
+    }
+
+    .contact-form label .required {
+      color: var(--color-primary);
+    }
+
+    .contact-form input,
+    .contact-form textarea {
+      width: 100%;
+      padding: 0.875rem 1rem;
+      border: 2px solid var(--color-dark-light);
+      background: var(--color-dark-medium);
+      color: var(--color-white);
+      border-radius: var(--border-radius-sm);
+      font-size: 1rem;
+      transition: border-color var(--transition-fast);
+    }
+
+    .contact-form input:focus,
+    .contact-form textarea:focus {
+      outline: none;
+      border-color: var(--color-primary);
+    }
+
+    .contact-form input::placeholder,
+    .contact-form textarea::placeholder {
+      color: var(--color-gray-medium);
+    }
+
+    .contact-form textarea {
+      min-height: 140px;
+      resize: vertical;
+    }
+
+    .contact-form .btn-submit {
+      width: 100%;
+      padding: 1rem 2rem;
+      background: var(--color-primary);
+      color: var(--color-dark);
+      border: none;
+      border-radius: var(--border-radius-sm);
+      font-size: 1.1rem;
+      font-weight: 700;
+      font-family: 'Oswald', sans-serif;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      cursor: pointer;
+      transition: background var(--transition-fast), transform var(--transition-fast);
+    }
+
+    .contact-form .btn-submit:hover {
+      background: #e6d200;
+      transform: translateY(-2px);
+    }
+
+    /* Maps Section */
+    .maps-section {
+      padding: 4rem 0;
+      background: var(--color-gray-light);
+    }
+
+    .maps-section .section-header {
+      text-align: center;
+      max-width: 700px;
+      margin: 0 auto 2rem;
+      padding: 0 2rem;
+    }
+
+    .maps-section .section-header h2 {
+      font-family: 'Oswald', sans-serif !important;
+      font-size: 2.5rem;
+      text-transform: uppercase;
+      margin-bottom: 1rem;
+      color: var(--color-dark);
+    }
+
+    .maps-section .section-header h2 span {
+      background: var(--color-dark);
+      color: var(--color-primary);
+      padding: 0 0.5rem;
+    }
+
+    .maps-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 2rem;
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 2rem;
+    }
+
+    .map-card {
+      background: var(--color-white);
+      border-radius: var(--border-radius-lg);
+      overflow: hidden;
+      box-shadow: var(--shadow-md);
+    }
+
+    .map-card .map-header {
+      padding: 1.25rem 1.5rem;
+      background: var(--color-dark);
+    }
+
+    .map-card .map-header h4 {
+      font-family: 'Oswald', sans-serif !important;
+      font-size: 1.25rem;
+      text-transform: uppercase;
+      color: var(--color-white);
+      margin: 0;
+    }
+
+    .map-card .map-header p {
+      color: rgba(255, 255, 255, 0.7);
+      margin: 0.5rem 0 0;
+      font-size: 0.95rem;
+    }
+
+    .map-card iframe {
+      display: block;
+      width: 100%;
+      height: 300px;
+      border: 0;
+    }
+
+    @media screen and (max-width: 1024px) {
+      .contact-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .maps-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    @media screen and (max-width: 768px) {
+      .contact-section {
+        padding: 3rem 0;
+      }
+
+      .contact-info,
+      .contact-form-wrapper {
+        padding: 1.5rem;
+      }
+
+      .maps-section {
+        padding: 3rem 0;
+      }
+
+      .maps-section .section-header h2 {
+        font-size: 1.75rem;
+      }
+    }
+  </style>
+
+  <!-- reCAPTCHA -->
+  <script src="https://www.google.com/recaptcha/api.js?render=6LcWvP0rAAAAAMDobBzCI9RaW5MlDavOp2kHeYgn"></script>
+
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=AW-17827074108"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'AW-17827074108');
+  </script>
+  <script>
+    gtag('config', 'AW-17827074108/YQvoCMat1NYbELygzrRC', {
+      'phone_conversion_number': '(407) 942-3681'
+    });
+  </script>
+  <!-- Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-SY7PX8ER88"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-SY7PX8ER88');
+  </script>
+</head>
+
+<body id="top" class="redesign-page">
+
+  <!-- Modern Header -->
+  <header class="modern-header" id="mainHeader">
+    <div class="header-inner">
+      <a href="index-design-a.html" class="logo">
+        <img src="img/florida-sealcoating.png" alt="Florida Sealcoating LLC" width="210" height="52">
+      </a>
+
+      <nav class="modern-nav" id="mainNav">
+        <a href="index-design-a.html">Home</a>
+        <a href="about.html">About</a>
+
+        <details class="nav-dropdown">
+          <summary>Services</summary>
+          <div class="dropdown-content">
+            <a href="services.html">Service Overview</a>
+            <a href="sealcoating.html">Sealcoating</a>
+            <a href="asphalt-paving.html">Asphalt Paving</a>
+            <a href="asphaltrepair.html">Asphalt Repair</a>
+            <a href="crack-sealing.html">Crack Sealing</a>
+            <a href="asphaltstriping.html">Striping &amp; Marking</a>
+            <a href="additionalservices.html">Additional Services</a>
+          </div>
+        </details>
+
+        <a href="residential.html">Residential</a>
+        <a href="commercial.html">Commercial</a>
+
+        <details class="nav-dropdown">
+          <summary>Locations</summary>
+          <div class="dropdown-content">
+            <a href="orlando.html">Orlando</a>
+            <a href="sanford.html">Sanford</a>
+          </div>
+        </details>
+
+        <a href="contact.html" class="active">Contact</a>
+      </nav>
+
+      <div class="header-cta">
+        <a href="tel:4079423681" class="header-phone">
+          <i class="fa fa-phone"></i> (407) 942-3681
+        </a>
+      </div>
+
+      <button class="mobile-menu-toggle" id="mobileMenuToggle" aria-label="Toggle navigation menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- Interior Hero -->
+  <section class="interior-hero">
+    <img src="img/gallery/asphalt-service-3.jpg" alt="Contact Florida Sealcoating" class="hero-bg">
+    <div class="hero-overlay"></div>
+    <div class="hero-content">
+      <span class="hero-eyebrow">Get In Touch</span>
+      <h1>Contact <span>Us</span></h1>
+      <p class="hero-subtitle">Ready to protect your asphalt investment? Contact us today for a free estimate on sealcoating, paving, repairs, and more throughout Central Florida.</p>
+      <div class="hero-cta">
+        <a href="tel:4079423681" class="btn-modern btn-primary btn-lg">
+          <i class="fa fa-phone"></i> (407) 942-3681
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Trust Bar -->
+  <div class="trust-bar">
+    <div class="trust-items">
+      <div class="trust-item">
+        <span class="trust-icon"><i class="fa fa-trophy"></i></span>
+        <span>20+ Years Experience</span>
+      </div>
+      <div class="trust-item">
+        <span class="trust-icon"><i class="fa fa-users"></i></span>
+        <span>90% Repeat Customers</span>
+      </div>
+      <div class="trust-item">
+        <span class="trust-icon"><i class="fa fa-shield"></i></span>
+        <span>Licensed &amp; Insured</span>
+      </div>
+      <div class="trust-item">
+        <span class="trust-icon"><i class="fa fa-star"></i></span>
+        <span>A+ BBB Rating</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- Contact Section -->
+  <section class="contact-section">
+    <div class="contact-grid">
+      <!-- Contact Information -->
+      <div class="contact-info">
+        <h3>Contact Information</h3>
+
+        <div class="contact-info-item">
+          <i class="fa fa-building"></i>
+          <div class="info-content">
+            <span class="info-label">Company</span>
+            <span class="info-value">Florida Sealcoating LLC</span>
+          </div>
+        </div>
+
+        <div class="contact-info-item">
+          <i class="fa fa-phone"></i>
+          <div class="info-content">
+            <span class="info-label">Phone</span>
+            <span class="info-value"><a href="tel:4079423681">(407) 942-3681</a></span>
+          </div>
+        </div>
+
+        <div class="contact-info-item">
+          <i class="fa fa-map-marker"></i>
+          <div class="info-content">
+            <span class="info-label">Orlando Office</span>
+            <span class="info-value">33 E Robinson St #216<br>Orlando, FL 32801</span>
+          </div>
+        </div>
+
+        <div class="contact-info-item">
+          <i class="fa fa-map-marker"></i>
+          <div class="info-content">
+            <span class="info-label">Sanford Office</span>
+            <span class="info-value">1461 Kastner Pl #101<br>Sanford, FL 32771</span>
+          </div>
+        </div>
+
+        <div class="contact-info-item">
+          <i class="fa fa-clock-o"></i>
+          <div class="info-content">
+            <span class="info-label">Business Hours</span>
+            <span class="info-value">Monday - Friday<br>8:00 AM - 5:00 PM</span>
+          </div>
+        </div>
+
+        <div class="contact-social">
+          <a href="https://www.facebook.com/floridasealcoating/" target="_blank" aria-label="Facebook">
+            <i class="fa fa-facebook"></i>
+          </a>
+          <a href="https://www.instagram.com/floridasealcoating/" target="_blank" aria-label="Instagram">
+            <i class="fa fa-instagram"></i>
+          </a>
+          <a href="https://goo.gl/maps/qbCeNbGwopYVDgUb9" target="_blank" aria-label="Google">
+            <i class="fa fa-google"></i>
+          </a>
+        </div>
+      </div>
+
+      <!-- Contact Form -->
+      <div class="contact-form-wrapper">
+        <h3>Request a Free Estimate</h3>
+        <form class="contact-form" action="mail/contact_me.php" method="post" id="contactForm">
+          <div class="form-group">
+            <label for="name">Name <span class="required">*</span></label>
+            <input type="text" id="name" name="name" placeholder="Your full name" required>
+          </div>
+
+          <div class="form-group">
+            <label for="email">Email <span class="required">*</span></label>
+            <input type="email" id="email" name="email" placeholder="Your email address" required>
+          </div>
+
+          <div class="form-group">
+            <label for="phone">Phone <span class="required">*</span></label>
+            <input type="tel" id="phone" name="phone" placeholder="Your phone number" required>
+          </div>
+
+          <div class="form-group">
+            <label for="address">Address <span class="required">*</span></label>
+            <input type="text" id="address" name="address" placeholder="Property address for estimate" required>
+          </div>
+
+          <div class="form-group">
+            <label for="message">Message <span class="required">*</span></label>
+            <textarea id="message" name="message" placeholder="Tell us about your project..." required></textarea>
+          </div>
+
+          <input type="hidden" name="recaptcha_token" id="recaptchaToken">
+
+          <button type="submit" class="btn-submit">
+            <i class="fa fa-paper-plane"></i> Send Message
+          </button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- Maps Section -->
+  <section class="maps-section">
+    <div class="section-header">
+      <h2>Our <span>Locations</span></h2>
+      <p style="color: var(--color-text-light);">Visit us at our Orlando or Sanford office, or we'll come to you for a free on-site estimate.</p>
+    </div>
+
+    <div class="maps-grid">
+      <!-- Orlando Map -->
+      <div class="map-card">
+        <div class="map-header">
+          <h4>Orlando Office</h4>
+          <p>33 E Robinson St #216, Orlando, FL 32801</p>
+        </div>
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3504.792517306483!2d-81.3783921!3d28.545955499999998!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88e77b856d6b47f3%3A0x5aaba250c818e54e!2sFlorida%20Sealcoating%20LLC!5e0!3m2!1sen!2sus!4v1768848254398!5m2!1sen!2sus"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+          title="Florida Sealcoating Orlando Office Location">
+        </iframe>
+      </div>
+
+      <!-- Sanford Map -->
+      <div class="map-card">
+        <div class="map-header">
+          <h4>Sanford Office</h4>
+          <p>1461 Kastner Pl #101, Sanford, FL 32771</p>
+        </div>
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3495.271370868183!2d-81.3261596!3d28.8307797!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88e70cfb72223e0f%3A0x6e34144404f0edb6!2sFlorida%20Sealcoating%20LLC!5e0!3m2!1sen!2sus!4v1768848065127!5m2!1sen!2sus"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+          title="Florida Sealcoating Sanford Office Location">
+        </iframe>
+      </div>
+    </div>
+  </section>
+
+  <!-- Bottom CTA -->
+  <section class="bottom-cta">
+    <div class="container">
+      <h2>Ready to Get <span>Started</span>?</h2>
+      <p>Get a free, no-obligation estimate for your asphalt project. Our team is ready to help protect and enhance your property.</p>
+      <a href="tel:4079423681" class="phone-display">
+        <i class="fa fa-phone"></i> (407) 942-3681
+      </a>
+      <div class="cta-buttons">
+        <a href="services.html" class="btn-modern btn-primary btn-lg">View Our Services</a>
+        <a href="about.html" class="btn-modern btn-outline btn-lg">Learn About Us</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Modern Footer -->
+  <footer class="modern-footer">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <img src="img/florida-sealcoating-1.png" alt="Florida Sealcoating LLC" class="footer-logo">
+        <p>Orlando's trusted sealcoating &amp; asphalt paving contractor since 2002. Commercial &amp; residential services with 90% repeat customers.</p>
+        <div class="footer-social">
+          <a href="https://www.facebook.com/floridasealcoating/" target="_blank" aria-label="Facebook">
+            <i class="fa fa-facebook"></i>
+          </a>
+          <a href="https://www.instagram.com/floridasealcoating/" target="_blank" aria-label="Instagram">
+            <i class="fa fa-instagram"></i>
+          </a>
+          <a href="https://goo.gl/maps/qbCeNbGwopYVDgUb9" target="_blank" aria-label="Google Maps">
+            <i class="fa fa-google"></i>
+          </a>
+        </div>
+      </div>
+
+      <div class="footer-column">
+        <h4>Services</h4>
+        <ul>
+          <li><a href="sealcoating.html">Sealcoating</a></li>
+          <li><a href="asphalt-paving.html">Asphalt Paving</a></li>
+          <li><a href="asphaltrepair.html">Asphalt Repair</a></li>
+          <li><a href="crack-sealing.html">Crack Sealing</a></li>
+          <li><a href="asphaltstriping.html">Striping</a></li>
+          <li><a href="additionalservices.html">Additional Services</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-column">
+        <h4>Company</h4>
+        <ul>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="residential.html">Residential</a></li>
+          <li><a href="commercial.html">Commercial</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-column">
+        <h4>Contact</h4>
+        <ul>
+          <li><a href="tel:4079423681">(407) 942-3681</a></li>
+          <li><a href="contact.html">Contact Form</a></li>
+          <li>Mon-Fri: 8AM-5PM</li>
+        </ul>
+        <div style="margin-top: 1.5rem;">
+          <a href="https://www.bbb.org/us/fl/sanford/profile/asphalt/florida-sealcoating-0733-90179766" target="_blank">
+            <img src="https://seal-centralflorida.bbb.org/logo/ruvtbum/florida-sealcoating-90179766.png" alt="BBB Accredited" style="height: 60px;">
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <div class="container">
+        <span>&copy; 2024 Florida Sealcoating LLC. All Rights Reserved.</span>
+        <span>Web Design, SEO &amp; Hosting by <a href="https://www.rekmarketing.com/" target="_blank">REK Marketing &amp; Design</a></span>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Sticky Mobile CTA Bar -->
+  <div class="sticky-cta-bar">
+    <div class="cta-inner">
+      <a href="tel:4079423681" class="cta-call">
+        <i class="fa fa-phone"></i> Call Now
+      </a>
+      <a href="contact.html" class="cta-quote">Free Quote</a>
+    </div>
+  </div>
+
+  <!-- Scripts -->
+  <script src="js/jquery.js"></script>
+  <script>
+    // Header scroll effect
+    window.addEventListener('scroll', function() {
+      const header = document.getElementById('mainHeader');
+      if (window.scrollY > 100) {
+        header.classList.add('scrolled');
+      } else {
+        header.classList.remove('scrolled');
+      }
+    });
+
+    // Mobile menu toggle
+    const mobileMenuToggle = document.getElementById('mobileMenuToggle');
+    const mainNav = document.getElementById('mainNav');
+
+    if (mobileMenuToggle && mainNav) {
+      mobileMenuToggle.addEventListener('click', function() {
+        this.classList.toggle('active');
+        mainNav.classList.toggle('active');
+      });
+    }
+
+    // Close dropdowns when clicking outside
+    document.addEventListener('click', function(e) {
+      if (!e.target.closest('.nav-dropdown')) {
+        document.querySelectorAll('.nav-dropdown[open]').forEach(dropdown => {
+          dropdown.removeAttribute('open');
+        });
+      }
+    });
+
+    // reCAPTCHA form handling
+    document.getElementById('contactForm').addEventListener('submit', function(e) {
+      e.preventDefault();
+
+      grecaptcha.ready(function() {
+        grecaptcha.execute('6LcWvP0rAAAAAMDobBzCI9RaW5MlDavOp2kHeYgn', {action: 'submit'}).then(function(token) {
+          document.getElementById('recaptchaToken').value = token;
+          document.getElementById('contactForm').submit();
+        });
+      });
+    });
+  </script>
+
+  <!-- Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "ContactPage",
+    "@id": "https://www.floridasealcoating.com/contact.html",
+    "name": "Contact Florida Sealcoating",
+    "description": "Contact Florida Sealcoating for free estimates on asphalt services in Orlando. Call (407) 942-3681 or visit our Orlando and Sanford locations.",
+    "url": "https://www.floridasealcoating.com/contact.html",
+    "mainEntity": {
+      "@type": "HomeAndConstructionBusiness",
+      "@id": "https://www.floridasealcoating.com/#organization",
+      "name": "Florida Sealcoating LLC",
+      "telephone": "(407) 942-3681",
+      "email": "info@floridasealcoating.com",
+      "url": "https://www.floridasealcoating.com",
+      "address": [
+        {
+          "@type": "PostalAddress",
+          "streetAddress": "33 E Robinson St #216",
+          "addressLocality": "Orlando",
+          "addressRegion": "FL",
+          "postalCode": "32801",
+          "addressCountry": "US"
+        },
+        {
+          "@type": "PostalAddress",
+          "streetAddress": "1461 Kastner Pl #101",
+          "addressLocality": "Sanford",
+          "addressRegion": "FL",
+          "postalCode": "32771",
+          "addressCountry": "US"
+        }
+      ],
+      "openingHoursSpecification": {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+        "opens": "08:00",
+        "closes": "17:00"
+      },
+      "sameAs": [
+        "https://www.facebook.com/floridasealcoating/",
+        "https://www.instagram.com/floridasealcoating/"
+      ]
+    }
+  }
+  </script>
+
+  <script>
+    nl_lang = "en";
+    nl_pos = "bl";
+    nl_compact = "1";
+    nl_dir = "/vendor/nagishli/nl-files/";
+  </script>
+  <script src="/vendor/nagishli/nagishli.js?v=2.3" charset="utf-8" defer></script>
+</body>
+
+</html>
