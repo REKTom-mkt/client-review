@@ -1,0 +1,573 @@
+/**
+ * Florida Sealcoating - Interior Pages Stylesheet
+ * Version: 1.0.0
+ *
+ * Extends modern-redesign.css for interior/service pages
+ */
+
+/* ============================================
+   Interior Page Hero (Shorter than homepage)
+   ============================================ */
+.interior-hero {
+  position: relative;
+  min-height: 380px;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  padding-top: 80px;
+  padding-bottom: 3rem;
+  margin: 0;
+  width: 100%;
+  background: var(--color-dark);
+}
+
+.interior-hero .hero-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0.3;
+  z-index: 0;
+}
+
+.interior-hero .hero-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    to bottom,
+    rgba(29, 29, 30, 0.5) 0%,
+    rgba(29, 29, 30, 0.7) 50%,
+    rgba(29, 29, 30, 0.85) 100%
+  );
+  z-index: 1;
+}
+
+.interior-hero .hero-content {
+  position: relative;
+  z-index: 2;
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 0 2rem;
+  text-align: center;
+  color: var(--color-white);
+}
+
+.interior-hero .hero-eyebrow {
+  display: inline-block;
+  background: rgba(254, 233, 0, 0.15);
+  border: 1px solid var(--color-primary);
+  color: var(--color-primary);
+  padding: 0.5rem 1.25rem;
+  border-radius: 50px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-bottom: 1.25rem;
+}
+
+.interior-hero h1 {
+  font-family: 'Oswald', var(--font-heading), sans-serif;
+  font-size: clamp(2rem, 5vw, 3.5rem);
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-bottom: 1rem;
+  line-height: 1.2;
+}
+
+.interior-hero h1 span {
+  color: var(--color-primary);
+}
+
+.interior-hero .hero-subtitle {
+  font-size: 1.15rem;
+  opacity: 0.9;
+  margin-bottom: 1.75rem;
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+  line-height: 1.6;
+}
+
+.interior-hero .hero-cta {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+/* ============================================
+   Content Sections
+   ============================================ */
+.content-section {
+  padding: 4rem 0;
+  width: 100%;
+}
+
+.content-section.bg-white {
+  background: var(--color-white);
+}
+
+.content-section.bg-light {
+  background: var(--color-gray-light);
+}
+
+.content-section.bg-dark {
+  background: var(--color-dark);
+  color: var(--color-white);
+}
+
+.content-section .container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+/* Two-column layout */
+.content-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 4rem;
+  align-items: center;
+}
+
+.content-grid.reverse {
+  direction: rtl;
+}
+
+.content-grid.reverse > * {
+  direction: ltr;
+}
+
+.content-text h2 {
+  font-family: 'Oswald', var(--font-heading), sans-serif;
+  font-size: 2.25rem;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  margin-bottom: 1.5rem;
+  color: var(--color-dark);
+}
+
+.content-section.bg-dark .content-text h2 {
+  color: var(--color-white);
+}
+
+.content-text h2 span {
+  background: var(--color-dark);
+  color: var(--color-primary);
+  padding: 0 0.5rem;
+}
+
+.content-section.bg-dark .content-text h2 span {
+  background: var(--color-primary);
+  color: var(--color-dark);
+}
+
+.content-text p {
+  font-size: 1.05rem;
+  line-height: 1.8;
+  color: var(--color-text-light);
+  margin-bottom: 1.25rem;
+}
+
+.content-section.bg-dark .content-text p {
+  color: rgba(255, 255, 255, 0.85);
+}
+
+.content-image img {
+  width: 100%;
+  border-radius: var(--border-radius-lg);
+  box-shadow: var(--shadow-lg);
+}
+
+/* ============================================
+   Benefits/Features List
+   ============================================ */
+.benefits-list {
+  list-style: none;
+  padding: 0;
+  margin: 1.5rem 0;
+}
+
+.benefits-list li {
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+  padding: 0.75rem 0;
+  font-size: 1.05rem;
+}
+
+.benefits-list li i {
+  color: var(--color-primary);
+  font-size: 1.1rem;
+  margin-top: 0.2rem;
+  flex-shrink: 0;
+}
+
+.content-section.bg-dark .benefits-list li {
+  color: var(--color-white);
+}
+
+/* ============================================
+   Process/Steps Section
+   ============================================ */
+.process-section {
+  padding: 4rem 0;
+  background: var(--color-gray-light);
+}
+
+.process-section .section-header {
+  text-align: center;
+  max-width: 700px;
+  margin: 0 auto 3rem;
+  padding: 0 2rem;
+}
+
+.process-section .section-header h2 {
+  font-family: 'Oswald', var(--font-heading), sans-serif;
+  font-size: 2.5rem;
+  text-transform: uppercase;
+  margin-bottom: 1rem;
+  color: var(--color-dark);
+}
+
+.process-section .section-header h2 span {
+  background: var(--color-dark);
+  color: var(--color-primary);
+  padding: 0 0.5rem;
+}
+
+.process-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+.process-step {
+  background: var(--color-white);
+  padding: 2rem;
+  border-radius: var(--border-radius-lg);
+  box-shadow: var(--shadow-sm);
+  position: relative;
+  transition: transform var(--transition-medium), box-shadow var(--transition-medium);
+}
+
+.process-step:hover {
+  transform: translateY(-5px);
+  box-shadow: var(--shadow-lg);
+}
+
+.process-step .step-number {
+  position: absolute;
+  top: -15px;
+  left: 2rem;
+  width: 50px;
+  height: 50px;
+  background: var(--color-primary);
+  color: var(--color-dark);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+  font-weight: 700;
+  font-family: 'Oswald', sans-serif;
+}
+
+.process-step h3 {
+  font-family: 'Oswald', var(--font-heading), sans-serif;
+  font-size: 1.25rem;
+  text-transform: uppercase;
+  margin-top: 1rem;
+  margin-bottom: 0.75rem;
+  color: var(--color-dark);
+}
+
+.process-step p {
+  color: var(--color-text-light);
+  line-height: 1.6;
+  margin: 0;
+}
+
+/* ============================================
+   Service Cards Grid (for Services Overview)
+   ============================================ */
+.service-cards-section {
+  padding: 4rem 0;
+  background: var(--color-white);
+}
+
+.service-cards-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+/* ============================================
+   Interior FAQ Section
+   ============================================ */
+.interior-faq {
+  padding: 4rem 0;
+  background: var(--color-white);
+}
+
+.interior-faq .section-header {
+  text-align: center;
+  max-width: 700px;
+  margin: 0 auto 2rem;
+  padding: 0 2rem;
+}
+
+.interior-faq .section-header h2 {
+  font-family: 'Oswald', var(--font-heading), sans-serif;
+  font-size: 2.5rem;
+  text-transform: uppercase;
+  margin-bottom: 1rem;
+  color: var(--color-dark);
+}
+
+.interior-faq .section-header h2 span {
+  background: var(--color-dark);
+  color: var(--color-primary);
+  padding: 0 0.5rem;
+}
+
+/* ============================================
+   Bottom CTA Section
+   ============================================ */
+.bottom-cta {
+  padding: 4rem 0;
+  background: var(--color-dark);
+  text-align: center;
+}
+
+.bottom-cta .container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+.bottom-cta h2 {
+  font-family: 'Oswald', var(--font-heading), sans-serif;
+  font-size: 2.5rem;
+  text-transform: uppercase;
+  color: var(--color-white);
+  margin-bottom: 1rem;
+}
+
+.bottom-cta h2 span {
+  color: var(--color-primary);
+}
+
+.bottom-cta p {
+  font-size: 1.15rem;
+  color: rgba(255, 255, 255, 0.8);
+  margin-bottom: 2rem;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.bottom-cta .cta-buttons {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.bottom-cta .phone-display {
+  font-size: 2rem;
+  font-weight: 700;
+  color: var(--color-primary);
+  text-decoration: none;
+  display: block;
+  margin-bottom: 1.5rem;
+}
+
+.bottom-cta .phone-display:hover {
+  color: var(--color-white);
+}
+
+.bottom-cta .phone-display i {
+  margin-right: 0.5rem;
+}
+
+/* ============================================
+   Breadcrumb Navigation
+   ============================================ */
+.breadcrumb {
+  padding: 1rem 0;
+  background: var(--color-dark-medium);
+}
+
+.breadcrumb .container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+.breadcrumb ul {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin: 0;
+  padding: 0;
+  font-size: 0.9rem;
+}
+
+.breadcrumb li {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: var(--color-gray-medium);
+}
+
+.breadcrumb li::after {
+  content: '/';
+  color: var(--color-dark-light);
+}
+
+.breadcrumb li:last-child::after {
+  display: none;
+}
+
+.breadcrumb a {
+  color: var(--color-gray-medium);
+  text-decoration: none;
+  transition: color var(--transition-fast);
+}
+
+.breadcrumb a:hover {
+  color: var(--color-primary);
+}
+
+.breadcrumb li:last-child {
+  color: var(--color-primary);
+}
+
+/* ============================================
+   Related Services
+   ============================================ */
+.related-services {
+  padding: 4rem 0;
+  background: var(--color-gray-light);
+}
+
+.related-services .section-header {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.related-services .section-header h2 {
+  font-family: 'Oswald', var(--font-heading), sans-serif;
+  font-size: 2rem;
+  text-transform: uppercase;
+  color: var(--color-dark);
+}
+
+.related-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.5rem;
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+/* ============================================
+   Responsive Adjustments
+   ============================================ */
+@media screen and (max-width: 1024px) {
+  .content-grid {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  .content-grid.reverse {
+    direction: ltr;
+  }
+
+  .content-image {
+    order: -1;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .interior-hero {
+    min-height: 320px;
+    padding-top: 70px;
+  }
+
+  .interior-hero h1 {
+    font-size: 1.75rem;
+  }
+
+  .interior-hero .hero-subtitle {
+    font-size: 1rem;
+  }
+
+  .content-section {
+    padding: 3rem 0;
+  }
+
+  .content-text h2 {
+    font-size: 1.75rem;
+  }
+
+  .process-section {
+    padding: 3rem 0;
+  }
+
+  .process-section .section-header h2,
+  .interior-faq .section-header h2,
+  .bottom-cta h2 {
+    font-size: 1.75rem;
+  }
+
+  .bottom-cta .phone-display {
+    font-size: 1.5rem;
+  }
+
+  .breadcrumb {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .interior-hero .hero-cta {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .interior-hero .hero-cta .btn-modern {
+    width: 100%;
+    max-width: 280px;
+  }
+
+  .process-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .bottom-cta .cta-buttons {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .bottom-cta .cta-buttons .btn-modern {
+    width: 100%;
+    max-width: 280px;
+  }
+}
