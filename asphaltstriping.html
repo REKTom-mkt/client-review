@@ -26,6 +26,9 @@
   <link rel="stylesheet" type="text/css" href="css/modern-redesign.css">
   <link rel="stylesheet" type="text/css" href="css/interior.css">
 
+  <!-- Video Preload -->
+  <link rel="preload" as="video" href="images/Parking Lot Striping Orlando.mp4">
+
   <!-- Design A Font Override -->
   <style>
     h1, h2, h3, h4, h5, h6,
@@ -117,9 +120,11 @@
     </div>
   </header>
 
-  <!-- Interior Hero -->
-  <section class="interior-hero">
-    <img src="img/misc/service_overview/stripping.jpg" alt="Parking Lot Striping Services" class="hero-bg">
+  <!-- Interior Hero with Video Background -->
+  <section class="interior-hero interior-hero-video">
+    <video class="hero-video" autoplay muted loop playsinline disablePictureInPicture poster="img/misc/service_overview/stripping.jpg">
+      <source src="images/Parking Lot Striping Orlando.mp4" type="video/mp4">
+    </video>
     <div class="hero-overlay"></div>
     <div class="hero-content">
       <span class="hero-eyebrow">Striping & Line Marking</span>
