@@ -1456,6 +1456,7 @@ body.redesign-page {
     right: 0;
     background: var(--color-dark);
     flex-direction: column;
+    align-items: center;
     padding: 1rem;
     gap: 0;
     box-shadow: var(--shadow-lg);
@@ -1468,9 +1469,11 @@ body.redesign-page {
     display: flex;
   }
 
-  .modern-nav a {
+  .modern-nav > a {
     padding: 1rem;
     border-bottom: 1px solid var(--color-dark-light);
+    width: 100%;
+    text-align: center;
   }
 
   .modern-nav a::after {
@@ -1484,6 +1487,8 @@ body.redesign-page {
   .nav-dropdown summary {
     padding: 1rem;
     border-bottom: 1px solid var(--color-dark-light);
+    justify-content: center;
+    text-align: center;
   }
 
   .nav-dropdown .dropdown-content {
@@ -1495,8 +1500,9 @@ body.redesign-page {
   }
 
   .nav-dropdown .dropdown-content a {
-    padding-left: 2rem;
+    padding: 0.85rem 1rem;
     border-bottom: 1px solid var(--color-dark-light);
+    text-align: center;
   }
 
   .mobile-menu-toggle {
