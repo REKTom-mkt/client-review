@@ -1317,6 +1317,7 @@ body.redesign-page {
 
 .footer-column li {
   margin-bottom: 0.75rem;
+  color: var(--color-gray-medium);
 }
 
 .footer-column a {
